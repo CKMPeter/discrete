@@ -47,5 +47,51 @@ namespace discrete_graph_c_
                 dfsTraverse(child); // Recursive call for each child
             }
         }
+
+        public static void bfsTraverse(Person person)
+        {
+            if (person == null)
+            {
+                Console.WriteLine(")");
+                return;
+            }
+
+            Queue<Person> queue = new Queue<Person>();
+            queue.Enqueue(person);
+
+            Console.WriteLine("("); // Start traversal
+
+            while (queue.Count > 0)
+            {
+                Person current = queue.Dequeue();
+
+                // Display current person's details
+                Console.Write($"( {current.name},");
+
+                // Display partner's details if they exist
+                if (current.partner != null)
+                {
+                    Console.Write($" {current.partner.name}");
+                }
+                Console.Write(")");
+
+                // Enqueue each child to process in the next level
+                foreach (var child in current.child)
+                {
+                    Console.Write(" -> ");
+                    Console.Write($"( {child.name},");
+
+                    // Display partner's details if they exist
+                    if (child.partner != null)
+                    {
+                        Console.Write($" {child.partner.name}");
+                    }
+                    Console.Write(")");
+
+                    queue.Enqueue(child);
+                }
+            }
+            Console.WriteLine(")"); // End traversal
+        }
     }
 }

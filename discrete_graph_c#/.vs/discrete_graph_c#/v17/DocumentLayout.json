@@ -7,24 +7,16 @@
       "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|D:\\oop code\\discrete_graph_c#\\object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\oop code\\discrete_graph_c#\\db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|D:\\oop code\\discrete_graph_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|D:\\oop code\\discrete_graph_c#\\object\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\oop code\\discrete_graph_c#\\db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|D:\\oop code\\discrete_graph_c#\\object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|D:\\oop code\\discrete_graph_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -44,21 +36,10 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\oop code\\discrete_graph_c#\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAQwEkAAAAkAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAQwFMAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T06:22:03.995Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "db.sql ",
-              "DocumentMoniker": "D:\\oop code\\discrete_graph_c#\\db.sql",
-              "RelativeDocumentMoniker": "db.sql",
-              "ToolTip": "db.sql ",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-25T10:28:04.367Z",
               "EditorCaption": ""
             },
             {
@@ -67,35 +48,35 @@
               "Title": "Functions.cs",
               "DocumentMoniker": "D:\\oop code\\discrete_graph_c#\\object\\Functions.cs",
               "RelativeDocumentMoniker": "object\\Functions.cs",
-              "ToolTip": "D:\\oop code\\discrete_graph_c#\\object\\Functions.cs*",
-              "RelativeToolTip": "object\\Functions.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "ToolTip": "D:\\oop code\\discrete_graph_c#\\object\\Functions.cs",
+              "RelativeToolTip": "object\\Functions.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAgwF4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T07:00:08.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UI.cs",
               "DocumentMoniker": "D:\\oop code\\discrete_graph_c#\\object\\UI.cs",
               "RelativeDocumentMoniker": "object\\UI.cs",
               "ToolTip": "D:\\oop code\\discrete_graph_c#\\object\\UI.cs",
               "RelativeToolTip": "object\\UI.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwEUAAAAJAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T06:35:46.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Person.cs",
               "DocumentMoniker": "D:\\oop code\\discrete_graph_c#\\object\\Person.cs",
               "RelativeDocumentMoniker": "object\\Person.cs",
               "ToolTip": "D:\\oop code\\discrete_graph_c#\\object\\Person.cs",
               "RelativeToolTip": "object\\Person.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAACIAAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAA9wBcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T06:24:33.095Z",
               "EditorCaption": ""

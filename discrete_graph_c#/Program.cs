@@ -78,7 +78,22 @@ namespace Program
                         break;
                     case 4: // print tree
                         p1 = UI.selectPersonUI(randomPerson);
-                        Functions.Traverse(p1);
+                        do
+                        {
+                            Console.Write("Select dfs or bfs:");
+                            string typeTraverse = Console.ReadLine();
+                            typeTraverse = typeTraverse.Trim().ToLower();
+                            if (typeTraverse == "dfs") 
+                            {
+                                Functions.dfsTraverse(p1);
+                                break;
+                            }
+                            else if (typeTraverse == "bfs")
+                            {
+                                Functions.bfsTraverse(p1);
+                                break;
+                            }
+                        } while (true);
                         break;
                     case 0:
                         state = false;
