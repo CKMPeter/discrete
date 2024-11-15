@@ -9,6 +9,7 @@ namespace Program
         {
             UI program = new UI();
             List<Person> randomPerson = new List<Person>();
+            List<String> list = new List<String>(); 
             bool state = true;
             Person p1 = new Person();
             Person p2 = new Person();
@@ -42,16 +43,34 @@ namespace Program
                         int mode;
                         do
                         {
-                            Console.WriteLine("Choose or Add a Person (1 or 2): ");
+                            Console.WriteLine("Choose Person/ Add Person/ Exit (1/2/0): ");
                             mode = Convert.ToInt32(Console.ReadLine());
+                            if (mode == 0) 
+                            { 
+                                Console.WriteLine("exit\n");
+                                break;
+                            }
                             if (mode == 1)
                             {
-                                p1 = UI.selectPersonUI(randomPerson);
+                                if (UI.confirmationUser("Add User")) p1 = UI.selectPersonUI(randomPerson);
+                                else
+                                {
+                                    mode = 0;
+                                    Console.WriteLine("Return to mode chosing!\n");
+                                }
                             }
                             else if (mode == 2)
                             {
-                                p1 = UI.addPersonUI();
-                                randomPerson.Add(p1);
+                                if (UI.confirmationUser("Add User"))
+                                {
+                                    p1 = UI.addPersonUI();
+                                    randomPerson.Add(p1);
+                                }
+                                else
+                                {
+                                    mode = 0;
+                                    Console.WriteLine("Return to mode chosing!\n");
+                                }
                             }
                         } while (1 > mode || mode > 2);
                         mode = 0;
@@ -71,9 +90,6 @@ namespace Program
                         }while (mode == 1);
 
                         p2.addChild(p1);
-                        p2.partner.addChild(p1);
-                        Person[] list = [p1, p2];
-                        p1.parent = list;
 
                         break;
                     case 4: // print tree
@@ -94,6 +110,18 @@ namespace Program
                                 break;
                             }
                         } while (true);
+                        break;
+                    case 5: //read file
+                        list = Functions.readFile();
+                        randomPerson = Functions.fromStringCreateInfo(list);
+                        foreach(Person person in randomPerson)
+                        {
+                            Console.WriteLine(person.name + " " + person.bDay.ToString("dd/MM/yyyy") + " " + person.step + " " + person.partner.name);
+                        }
+                        break;
+                    case 6: //test
+                        randomPerson = Functions.CreateTreeFromList(randomPerson);
+                        Console.WriteLine("complete!");
                         break;
                     case 0:
                         state = false;

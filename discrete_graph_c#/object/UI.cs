@@ -21,6 +21,7 @@ namespace discrete_graph_c_
                      "\n2. Add Connection" +
                      "\n3. Add Child" +
                      "\n4. Print Tree"+
+                     "\n5. Read File"+
                      "\n\nSelect: ");
             int mode = Convert.ToInt32(Console.ReadLine());
             return mode;
@@ -58,7 +59,6 @@ namespace discrete_graph_c_
                 bDay = Console.ReadLine();
             } while (!Functions.birthdayFormatChecking(bDay));
 
-            string format = "dd/mm/yyyy";
             DateTime birthDay = DateTime.Parse(bDay, new CultureInfo("en-GB"));
 
             foreach (Person person in list)
@@ -67,6 +67,18 @@ namespace discrete_graph_c_
             }
             Console.WriteLine("No Person Was Found!");
             return null;
+        }
+
+        public static bool confirmationUser(string str)
+        {
+            string txt = "";
+            do
+            {
+                Console.WriteLine("Want to " + str + " (Y or N)");
+                txt = Console.ReadLine();
+            } while (txt != "Y" && txt != "N");
+            if (txt == "N") return false;
+            return true;
         }
     }
 }
