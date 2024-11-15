@@ -1,5 +1,6 @@
 ﻿using discrete_graph_c_;
 using System;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Program
 {
@@ -7,6 +8,7 @@ namespace Program
     {
         static public void Main(string[] args)
         {
+            string str = "D:/oop code/tree.txt";
             UI program = new UI();
             List<Person> randomPerson = new List<Person>();
             List<String> list = new List<String>(); 
@@ -35,9 +37,11 @@ namespace Program
                         p2.addPersonConnection(p1);
                         break;
                     case 3: // add child
+                        if (!UI.confirmationUser("Add Child")) break;
                         if (randomPerson.Count == 0)
                         {
                             Console.WriteLine("No Person in list yet!\n");
+                            Console.ReadKey();
                             break;
                         }
                         int mode;
@@ -93,6 +97,11 @@ namespace Program
 
                         break;
                     case 4: // print tree
+                        if (randomPerson.Count == 0) {
+                            Console.WriteLine("No Person in list yet!\n");
+                            Console.ReadKey();
+                            break;
+                        }
                         p1 = UI.selectPersonUI(randomPerson);
                         do
                         {
@@ -112,12 +121,13 @@ namespace Program
                         } while (true);
                         break;
                     case 5: //read file
-                        list = Functions.readFile();
+                        list = Functions.readFile(str);
                         randomPerson = Functions.fromStringCreateInfo(list);
                         foreach(Person person in randomPerson)
                         {
                             Console.WriteLine(person.name + " " + person.bDay.ToString("dd/MM/yyyy") + " " + person.step + " " + person.partner.name);
                         }
+                        Console.ReadKey();
                         break;
                     case 6: //test
                         randomPerson = Functions.CreateTreeFromList(randomPerson);

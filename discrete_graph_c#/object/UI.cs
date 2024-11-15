@@ -15,21 +15,41 @@ namespace discrete_graph_c_
         // Main UI
         public static int selectUI() 
         {
-            Console.WriteLine("\n====================");
-            Console.Write("Mode Selection:" +
-                     "\n1. Add Person" +
-                     "\n2. Add Connection" +
-                     "\n3. Add Child" +
-                     "\n4. Print Tree"+
-                     "\n5. Read File"+
-                     "\n\nSelect: ");
-            int mode = Convert.ToInt32(Console.ReadLine());
+            int mode;
+            string tmp;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("\n====================");
+                Console.Write("Mode Selection:" +
+                         "\n1. Add Person" +
+                         "\n2. Add Connection" +
+                         "\n3. Add Child" +
+                         "\n4. Print Tree" +
+                         "\n5. Read File" +
+                         "\n6. Create Tree" +
+                         "\n\nSelect: ");
+                tmp = Console.ReadLine();
+                if (tmp.Length < 2 && tmp != "")
+                {
+                    if (Convert.ToChar(tmp) > 47 && Convert.ToChar(tmp) < 57)
+                    { 
+                        mode = Convert.ToInt32(tmp);
+                        continue;
+                    }
+                }
+                Console.WriteLine("Please Select Again!" +
+                    "\nPress any key to try again!");
+                Console.ReadKey();
+                mode = -1;
+            } while (mode < 0 || mode > 6);
             return mode;
         }
 
         // Add Person UI
         public static Person addPersonUI() {
-            Console.WriteLine("\n====================");
+            Console.WriteLine("\n====================" +
+                "\n/To Exit Type Exit in name/");
             Person person = new Person();
             Console.Write("Add member:\n" +
                             "Name: ");
@@ -74,10 +94,11 @@ namespace discrete_graph_c_
             string txt = "";
             do
             {
-                Console.WriteLine("Want to " + str + " (Y or N)");
+                Console.WriteLine("Want to " + str + " (y or n)");
                 txt = Console.ReadLine();
-            } while (txt != "Y" && txt != "N");
-            if (txt == "N") return false;
+                txt.ToLower();
+            } while (txt != "y" && txt != "n");
+            if (txt == "n") return false;
             return true;
         }
     }

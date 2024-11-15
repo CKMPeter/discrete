@@ -12,7 +12,7 @@ namespace discrete_graph_c_
 {
     public class Functions
     {
-        public static List<string> readFile()//Code for file txt reading
+        public static List<string> readFile(string str)//Code for file txt reading
         {
             String line;
             string A = "";
@@ -21,7 +21,7 @@ namespace discrete_graph_c_
             try
             {
                 // Pass the file path and file name to the StreamReader constructor
-                using (StreamReader sr = new StreamReader("D:/oop code/tree.txt"))
+                using (StreamReader sr = new StreamReader(str))
                 {
                     // Continue to read until you reach the end of the file
                     while ((line = sr.ReadLine()) != null)
