@@ -1,5 +1,7 @@
 ﻿using discrete_graph_c_;
+using Google.Protobuf.Compiler;
 using System;
+using System.Globalization;
 using System.Reflection.Metadata.Ecma335;
 
 namespace Program
@@ -18,83 +20,75 @@ namespace Program
             while (state) {
                 switch (UI.selectUI())
                 {
-                    case 1: // add random person
+                    case 1: // add a person
+                        Functions.printList(randomPerson);
+                        int mode_;
                         p1 = UI.addPersonUI();
-                        randomPerson.Add(p1);
-                        break;
-                    case 2: // add connection
-                        Console.WriteLine("====================");
-                        if (randomPerson.Count == 0) {
-                            Console.WriteLine("No Person in list yet!\n");
-                            break; 
-                        }
-                        Console.WriteLine("select Person 1:\n");
-                        p1 = UI.selectPersonUI(randomPerson);
-                        Console.WriteLine("select Person 2:\n");
-                        p2 = UI.selectPersonUI(randomPerson);
-                        if (p1 == null || p2 == null) break; 
-                        p1.addPersonConnection(p2);
-                        p2.addPersonConnection(p1);
-                        break;
-                    case 3: // add child
-                        if (!UI.confirmationUser("Add Child")) break;
                         if (randomPerson.Count == 0)
                         {
-                            Console.WriteLine("No Person in list yet!\n");
-                            Console.ReadKey();
+                            Console.WriteLine("Add Completed!\n");
                             break;
                         }
-                        int mode;
+                        Console.WriteLine("====================================" +
+                            "\nWhat is the role of this person?\n");
+                        string role = "";
                         do
                         {
-                            Console.WriteLine("Choose Person/ Add Person/ Exit (1/2/0): ");
-                            mode = Convert.ToInt32(Console.ReadLine());
-                            if (mode == 0) 
-                            { 
-                                Console.WriteLine("exit\n");
-                                break;
-                            }
-                            if (mode == 1)
+                            role = Console.ReadLine();
+                            role = role.Trim().ToLower();
+                            if (UI.confirmationUser(role))
                             {
-                                if (UI.confirmationUser("Add User")) p1 = UI.selectPersonUI(randomPerson);
-                                else
+                                if (role == "partner") // add connection
                                 {
-                                    mode = 0;
-                                    Console.WriteLine("Return to mode chosing!\n");
+                                    Console.WriteLine("select This Person Partner:\n");
+                                    p2 = UI.selectPersonUI(randomPerson);
+                                    if (p1 == null || p2 == null) break;
+                                    p1.addPersonConnection(p2);
+                                    p2.addPersonConnection(p1);
+                                    break;
+                                }
+                                else if (role == "child") // add child
+                                {
+                                    mode_ = 0;
+                                    do
+                                    {
+                                        Console.WriteLine("PARENT\n");
+                                        p2 = UI.selectPersonUI(randomPerson);
+                                        if (p2 == p1)
+                                        {
+                                            Console.WriteLine("Can not be the same Person!\n");
+                                            mode_ = 1;
+                                        }
+                                        else if (p2.partner == p1)
+                                        {
+                                            Console.WriteLine("Can not be both role!\n");
+                                            mode_ = 1;
+                                        }
+                                    } while (mode_ == 1);
+
+                                    p2.addChild(p1);
                                 }
                             }
-                            else if (mode == 2)
-                            {
-                                if (UI.confirmationUser("Add User"))
-                                {
-                                    p1 = UI.addPersonUI();
-                                    randomPerson.Add(p1);
-                                }
-                                else
-                                {
-                                    mode = 0;
-                                    Console.WriteLine("Return to mode chosing!\n");
-                                }
-                            }
-                        } while (1 > mode || mode > 2);
-                        mode = 0;
-                        do
+                        } while (role != "child" || role != "partner");
+                        randomPerson.Add(p1);
+                        break;
+                    case 2: // update a Person
+                        Console.WriteLine("/Update Person Information/");
+                        Functions.printList(randomPerson);
+                        p1 = UI.selectPersonUI(randomPerson);
+                        Console.WriteLine("Choose The Part you want to upadte: ");
+                        if (UI.partSelection() == "name") {
+                            string newName = Console.ReadLine();
+                            p1.name = newName.Trim(); 
+                        }else if (UI.partSelection() == "dob")
                         {
-                            Console.WriteLine("PARENT\n");
-                            p2 = UI.selectPersonUI(randomPerson);
-                            if (p2 == p1)
-                            {
-                                Console.WriteLine("Can not be the same Person!\n");
-                                mode = 1;
-                            }else if (p2.partner == p1)
-                            {
-                                Console.WriteLine("Can not be both role!\n");
-                                mode = 1;
-                            }
-                        }while (mode == 1);
-
-                        p2.addChild(p1);
-
+                            string newDob = Console.ReadLine();
+                            DateTime birthDay = DateTime.Parse(newDob, new CultureInfo("en-GB"));
+                            p1.bDay = birthDay;
+                        }
+                        break;
+                    case 3: // add child
+                        
                         break;
                     case 4: // print tree
                         if (randomPerson.Count == 0) {
@@ -111,11 +105,13 @@ namespace Program
                             if (typeTraverse == "dfs") 
                             {
                                 Functions.dfsTraverse(p1);
+                                Console.ReadKey();
                                 break;
                             }
                             else if (typeTraverse == "bfs")
                             {
                                 Functions.bfsTraverse(p1);
+                                Console.ReadKey();
                                 break;
                             }
                         } while (true);
@@ -132,6 +128,14 @@ namespace Program
                     case 6: //test
                         randomPerson = Functions.CreateTreeFromList(randomPerson);
                         Console.WriteLine("complete!");
+                        Console.ReadKey();
+                        break;
+                    case 7:
+                        foreach(Person person in randomPerson)
+                        {
+                            Console.WriteLine(person.name + " " + person.bDay.ToString("dd/MM/yyyy") + " " + person.step + " " + person.partner.name);
+                        }
+                        Console.ReadKey ();
                         break;
                     case 0:
                         state = false;

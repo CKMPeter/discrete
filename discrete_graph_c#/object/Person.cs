@@ -9,7 +9,7 @@ namespace discrete_graph_c_
 { 
     public class Person
     {
-
+        public string PersonID { get; set; }
         public Person[] parent = new Person[2];
         public string name { get; set; }
         public DateTime bDay { get; set; }
@@ -25,6 +25,7 @@ namespace discrete_graph_c_
             this.bDay = bDay;
             this.partner = partner;
             this.child = child;
+            this.PersonID = createID();
         }
         public Person(string name, int step)
         {
@@ -34,6 +35,7 @@ namespace discrete_graph_c_
             this.partner = new Person();
             this.child = new List<Person>();
             this.parent = new Person[2];
+            this.PersonID = createID();
         }
         public Person(string name, DateTime bDay, int step)
         {
@@ -43,6 +45,7 @@ namespace discrete_graph_c_
             this.partner = new Person();
             this.child = new List<Person>();
             this.parent = new Person[2];
+            this.PersonID = createID();
         }
         public Person()
         {
@@ -52,6 +55,7 @@ namespace discrete_graph_c_
             this.partner = null;
             this.child = new List<Person>();
             this.parent = null;
+            this.PersonID = createID();
         }
 
         // Function
@@ -81,7 +85,21 @@ namespace discrete_graph_c_
             return;
         }
 
-       
-        
+        public string createID()
+        {
+            DateTime dateTime = this.bDay;
+            string tmp = dateTime.ToString("ddMMyy");
+            string tmp_ = "";
+            for (int i = 0; i < tmp.Length; i++)
+            {
+                if (tmp[i] == '/')
+                {
+                    continue;
+                }
+                tmp_ += tmp[i];
+            }
+            tmp_ = this.name + tmp_;
+            return tmp_;
+        }
     }
 }

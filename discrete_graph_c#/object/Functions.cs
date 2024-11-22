@@ -67,6 +67,26 @@ namespace discrete_graph_c_
                 Console.WriteLine("Executing finally block.");
             }
         }
+
+        public static void printToFile(List<Person> randomPerson, string pth)
+        {
+            try
+            {
+                using (StreamWriter wt = new StreamWriter (pth))
+                {
+
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+                return null;
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
+        }
         public static bool birthdayFormatChecking(string bDay) {
             string pattern = @"^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$";
 
@@ -114,7 +134,10 @@ namespace discrete_graph_c_
             }
 
             Queue<Person> queue = new Queue<Person>();
+            HashSet<Person> visited = new HashSet<Person>(); // Track visited persons and partners
+
             queue.Enqueue(person);
+            visited.Add(person);
 
             Console.WriteLine("("); // Start traversal
 
@@ -123,33 +146,31 @@ namespace discrete_graph_c_
                 Person current = queue.Dequeue();
 
                 // Display current person's details
-                Console.Write($"( {current.name},");
+                Console.Write($"( {current.name}");
 
-                // Display partner's details if they exist
-                if (current.partner != null)
+                // Display partner's details if they exist and haven't been visited
+                if (current.partner != null && !visited.Contains(current.partner))
                 {
-                    Console.Write($" {current.partner.name}");
+                    Console.Write($", {current.partner.name}");
+                    visited.Add(current.partner); // Mark partner as visited
                 }
-                Console.Write(")");
+                Console.Write(")->");
 
                 // Enqueue each child to process in the next level
                 foreach (var child in current.child)
                 {
-                    Console.Write(" -> ");
-                    Console.Write($"( {child.name},");
-
-                    // Display partner's details if they exist
-                    if (child.partner != null)
+                    if (!visited.Contains(child)) // Process only if not visited
                     {
-                        Console.Write($" {child.partner.name}");
+                        queue.Enqueue(child);
+                        visited.Add(child); // Mark child as visited
                     }
-                    Console.Write(")");
-
-                    queue.Enqueue(child);
                 }
             }
             Console.WriteLine(")"); // End traversal
         }
+
+
+
         public static List<Person> fromStringCreateInfo(List<String> lines)
         {
             Person tmp = new Person();
@@ -217,7 +238,7 @@ namespace discrete_graph_c_
             }
             return list;
         }
-        public static List<Person> CreateTreeFromList(List<Person> list) // loi add con
+        public static List<Person> CreateTreeFromList(List<Person> list)
         {
             List<Person> checkedList = new List<Person>();
             Person tmp = new Person();
@@ -244,7 +265,7 @@ namespace discrete_graph_c_
                     }
                 }
                 tmp.addChild(person);
-                //tmp.addChild(person.partner);
+                tmp.addChild(person.partner);
             }
             return list;
         }
@@ -276,6 +297,15 @@ namespace discrete_graph_c_
                     A.partner.parent[1] = B.partner;
                 }
                 else if (A.partner.parent[1] == null && A.partner.parent[0] != B) A.partner.parent[1] = B.partner;
+            }
+        }
+
+        public static void printList(List<Person> randomPerson)
+        {
+            if (randomPerson.Count == 0) return;
+            Console.WriteLine("====================================================");
+            foreach (var person in randomPerson) { 
+                Console.WriteLine("Name: " + person.name + "| | ID: " + person.PersonID);
             }
         }
     }

@@ -20,10 +20,10 @@ namespace discrete_graph_c_
             do
             {
                 Console.Clear();
-                Console.WriteLine("\n====================");
+                Console.WriteLine("\n====================================");
                 Console.Write("Mode Selection:" +
                          "\n1. Add Person" +
-                         "\n2. Add Connection" +
+                         "\n2. Update Person" +
                          "\n3. Add Child" +
                          "\n4. Print Tree" +
                          "\n5. Read File" +
@@ -42,13 +42,13 @@ namespace discrete_graph_c_
                     "\nPress any key to try again!");
                 Console.ReadKey();
                 mode = -1;
-            } while (mode < 0 || mode > 6);
+            } while (mode < 0 || mode > 7);
             return mode;
         }
 
         // Add Person UI
         public static Person addPersonUI() {
-            Console.WriteLine("\n====================" +
+            Console.WriteLine("\n====================================" +
                 "\n/To Exit Type Exit in name/");
             Person person = new Person();
             Console.Write("Add member:\n" +
@@ -67,23 +67,14 @@ namespace discrete_graph_c_
         // Select A Person UI
         public static Person selectPersonUI(List<Person> list) 
         {
-            Console.WriteLine("\n====================");
+            Console.WriteLine("\n====================================");
             if (list.Count <= 0) return null;
             Console.Write("Select Person: " +
-                            "\nname:");
-            string name = Console.ReadLine();
-            Console.Write("\nbirthday:");
-            string bDay = "dd/mm/yyyy";
-            do
-            {
-                bDay = Console.ReadLine();
-            } while (!Functions.birthdayFormatChecking(bDay));
-
-            DateTime birthDay = DateTime.Parse(bDay, new CultureInfo("en-GB"));
-
+                            "\nPersonID:");
+            string pID = Console.ReadLine();
             foreach (Person person in list)
             {
-                if (person.name == name && person.bDay == birthDay) return person;
+                if (person.PersonID == pID) return person;
             }
             Console.WriteLine("No Person Was Found!");
             return null;
@@ -100,6 +91,19 @@ namespace discrete_graph_c_
             } while (txt != "y" && txt != "n");
             if (txt == "n") return false;
             return true;
+        }
+       
+        public static string partSelection()
+        {
+            string tmp = "";
+            do
+            {
+                tmp = Console.ReadLine();
+                tmp = tmp.ToLower().Trim();
+                if (tmp == "dob") break;
+                if (tmp == "name") break;
+            } while (true);
+            return tmp;
         }
     }
 }
