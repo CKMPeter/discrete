@@ -1,6 +1,8 @@
-﻿using Org.BouncyCastle.Math.Field;
+﻿using Microsoft.VisualBasic;
+using Org.BouncyCastle.Math.Field;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using System.Diagnostics.Eventing.Reader;
 using System.Globalization;
 using System.Linq;
@@ -36,7 +38,6 @@ namespace discrete_graph_c_
                             {
                                 // Append A to lines and reset A
                                 A = A + c +count;
-                                 // Reset A for the next word
                             }
                             else if (char.IsLetterOrDigit(c) || c == '(' || c == ')' || c == '/') // Check for alphanumeric or parentheses
                             {
@@ -47,8 +48,7 @@ namespace discrete_graph_c_
                         A = "";
                         count = 0;
                         //write the line to console window
-                        //Console.WriteLine(line);
-                        //Read the next line
+                        Console.WriteLine(line);
                     } while (line != null) ;
                     //close the file
                     sr.Close();
@@ -70,21 +70,40 @@ namespace discrete_graph_c_
 
         public static void printToFile(List<Person> randomPerson, string pth)
         {
+            List<Person> checkedList = new List<Person>();
             try
             {
                 using (StreamWriter wt = new StreamWriter (pth))
                 {
-
+                    foreach(Person person in randomPerson)
+                    {
+                        // Skip if the person's partner has already been checked
+                        if (person.partner != null && checkedList.Contains(person.partner))
+                            continue;
+                        checkedList.Add(person);
+                        int gender, gender_;
+                        gender = gender_ = 0 ;
+                        if (person.gender) gender = 1;
+                        if (person.partner.gender) gender_ = 1;
+                        if (person.bDay != default(DateTime)) wt.Write(new string('-', person.step) + person.name + "("+ person.bDay.Date.ToString("dd/MM/yyyy")+ ")"+gender+",");
+                        else wt.Write(new string('-', person.step) + person.name + "()"+gender+",");
+                        if (person.partner!= null)
+                        {
+                            if(person.partner.bDay != default(DateTime)) wt.WriteLine(person.partner.name + "(" + person.partner.bDay.Date.ToString("dd/MM/yyyy") + ")"+gender_);
+                            else wt.WriteLine(person.partner.name + "()"+gender_);
+                        }
+                    }
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine("Exception: " + e.Message);
-                return null;
+                return;
             }
             finally
             {
-                Console.WriteLine("Executing finally block.");
+                Console.WriteLine("Print Complete!!!.");
+                Console.ReadKey();
             }
         }
         public static bool birthdayFormatChecking(string bDay) {
@@ -178,6 +197,7 @@ namespace discrete_graph_c_
             List <Person> list = new List<Person>();
             int step;
             string name, dob;
+            bool gender;
             int flag = 0;
             foreach(string line in lines)
             {
@@ -198,18 +218,20 @@ namespace discrete_graph_c_
                             }
                             else flag = j;
                         }
+                        if (line[i - 1] - '0' == 1) gender = true; else gender = false;
                         if (dob != "")
                         {
                             DateTime birthDay = DateTime.Parse(dob, new CultureInfo("en-GB"));
-                            tmp = new Person(name, birthDay, line[0] - '0');
+                            tmp = new Person(name, birthDay, line[0] - '0', gender);
                         }
-                        else tmp = new Person(name, line[0] - '0');
+                        else tmp = new Person(name, line[0] - '0', gender);
                         //reset for next person
                         if (line[i + 1] == null) break;
                         name = "";
                         dob = "";
                         flag = 0;
-                        for (int m = line.Length - 2; m > i + 1; m--)
+                        gender = false;
+                        for (int m = line.Length - 3; m > i + 1; m--)
                         {
                             if (flag != 0) name = line[m] + name;
                             if (line[m] != '(')
@@ -218,12 +240,13 @@ namespace discrete_graph_c_
                             }
                             else flag = m;
                         }
+                        if (line[line.Length - 1] - '0' == 1) gender = true;
                         if (dob != "")
                         {
                             DateTime birthDay = DateTime.Parse(dob, new CultureInfo("en-GB"));
-                            tmp_ = new Person(name, birthDay, line[i + 1] - '0');
+                            tmp_ = new Person(name, birthDay, line[i + 1] - '0', gender);
                         }
-                        else tmp_ = new Person(name, line[i + 1] - '0');
+                        else tmp_ = new Person(name, line[i + 1] - '0', gender);
                         tmp_.partner = tmp;
                         tmp.partner = tmp_;
                         list.Add(tmp);
@@ -306,6 +329,61 @@ namespace discrete_graph_c_
             Console.WriteLine("====================================================");
             foreach (var person in randomPerson) { 
                 Console.WriteLine("Name: " + person.name + "| | ID: " + person.PersonID);
+            }
+        }
+
+        public static void relationCheck(Person A, Person B)
+        {
+            if (A == null || B == null) return;
+            string relation = "";
+            string tmp;
+            int distance = Math.Abs(A.step - B.step);
+            if (distance == 0) 
+            {
+                Console.WriteLine(A.name + "and " + B.name + " are Partner.");
+                return;
+            }
+            if (A.step - B.step > 0 )
+            {
+                Console.Write(B.name + " is " + A.name + "'s ");
+                if (distance < 2)
+                {
+                    if (B.gender) Console.Write("Father");
+                    else Console.Write("Mother");
+                    Console.Write(A.name + " is " + B.name + "'s Child");
+                }
+                else
+                {
+                    tmp = "";
+                    for (int i = 1; i < distance; i++)
+                    {
+                        tmp += "Great ";
+                    }
+                    if (B.gender) Console.Write(tmp + "Grand Father");
+                    else Console.Write(tmp + "Grand Mother");
+                    Console.Write(A.name + " is " + B.name + "'s " + tmp + "Grand Child");
+                }
+            }
+            else
+            {
+                Console.Write(A.name + " is " + B.name + "'s ");
+                if (distance < 2)
+                {
+                    if (A.gender) Console.Write("Father");
+                    else Console.Write("Mother");
+                    Console.Write(B.name + " is " + A.name + "'s Child");
+                }
+                else
+                {
+                    tmp = "";
+                    for (int i = 1; i < distance; i++)
+                    {
+                        tmp += "Great ";
+                    }
+                    if (A.gender) Console.Write("Grand Father");
+                    else Console.Write("Grand Mother");
+                    Console.Write(B.name + " is " + A.name + "'s " + tmp + "Grand Child");
+                }
             }
         }
     }

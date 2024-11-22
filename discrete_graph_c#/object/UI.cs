@@ -24,10 +24,11 @@ namespace discrete_graph_c_
                 Console.Write("Mode Selection:" +
                          "\n1. Add Person" +
                          "\n2. Update Person" +
-                         "\n3. Add Child" +
-                         "\n4. Print Tree" +
+                         "\n3. Print Tree" +
+                         "\n4. Print File" +
                          "\n5. Read File" +
                          "\n6. Create Tree" +
+                         "\n7. Check Relationship" +
                          "\n\nSelect: ");
                 tmp = Console.ReadLine();
                 if (tmp.Length < 2 && tmp != "")

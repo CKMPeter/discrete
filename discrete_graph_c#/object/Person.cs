@@ -16,8 +16,9 @@ namespace discrete_graph_c_
         public Person partner { get; set; }
         public List<Person> child{ get; set; }
         public int step { get; set; }
+        public bool gender { get; set; }
         // Constructor
-        public Person(string name, DateTime bDay, Person partner, List<Person> child, Person[] parents, int step)
+        public Person(string name, DateTime bDay, Person partner, List<Person> child, Person[] parents, int step, bool gender)
         {
             this.step = step;
             this.parent = parents;
@@ -26,8 +27,9 @@ namespace discrete_graph_c_
             this.partner = partner;
             this.child = child;
             this.PersonID = createID();
+            this.gender = gender;
         }
-        public Person(string name, int step)
+        public Person(string name, int step, bool gender)
         {
             this.step = step;
             this.name = name;
@@ -36,8 +38,9 @@ namespace discrete_graph_c_
             this.child = new List<Person>();
             this.parent = new Person[2];
             this.PersonID = createID();
+            this.gender = gender;
         }
-        public Person(string name, DateTime bDay, int step)
+        public Person(string name, DateTime bDay, int step, bool gender)
         {
             this.step = step;
             this.name = name;
@@ -46,6 +49,7 @@ namespace discrete_graph_c_
             this.child = new List<Person>();
             this.parent = new Person[2];
             this.PersonID = createID();
+            this.gender = gender;
         }
         public Person()
         {
@@ -56,6 +60,7 @@ namespace discrete_graph_c_
             this.child = new List<Person>();
             this.parent = null;
             this.PersonID = createID();
+            this.gender = true;
         }
 
         // Function
@@ -98,7 +103,7 @@ namespace discrete_graph_c_
                 }
                 tmp_ += tmp[i];
             }
-            tmp_ = this.name + tmp_;
+            tmp_ = this.name + tmp_ + this.step;
             return tmp_;
         }
     }

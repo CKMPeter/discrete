@@ -87,11 +87,9 @@ namespace Program
                             p1.bDay = birthDay;
                         }
                         break;
-                    case 3: // add child
-                        
-                        break;
-                    case 4: // print tree
-                        if (randomPerson.Count == 0) {
+                    case 3: // print tree
+                        if (randomPerson.Count == 0)
+                        {
                             Console.WriteLine("No Person in list yet!\n");
                             Console.ReadKey();
                             break;
@@ -102,7 +100,7 @@ namespace Program
                             Console.Write("Select dfs or bfs:");
                             string typeTraverse = Console.ReadLine();
                             typeTraverse = typeTraverse.Trim().ToLower();
-                            if (typeTraverse == "dfs") 
+                            if (typeTraverse == "dfs")
                             {
                                 Functions.dfsTraverse(p1);
                                 Console.ReadKey();
@@ -116,6 +114,9 @@ namespace Program
                             }
                         } while (true);
                         break;
+                    case 4: // print file
+                        Functions.printToFile(randomPerson, "D:/oop code/tmp.txt");
+                        break;
                     case 5: //read file
                         list = Functions.readFile(str);
                         randomPerson = Functions.fromStringCreateInfo(list);
@@ -125,16 +126,22 @@ namespace Program
                         }
                         Console.ReadKey();
                         break;
-                    case 6: //test
+                    case 6: //create tree
                         randomPerson = Functions.CreateTreeFromList(randomPerson);
                         Console.WriteLine("complete!");
                         Console.ReadKey();
                         break;
-                    case 7:
-                        foreach(Person person in randomPerson)
+                    case 7: //check relationshop
+                        Functions.printList(randomPerson);
+                        p1 = UI.selectPersonUI(randomPerson);
+                        p2 = UI.selectPersonUI(randomPerson);
+                        if(p1 == p2)
                         {
-                            Console.WriteLine(person.name + " " + person.bDay.ToString("dd/MM/yyyy") + " " + person.step + " " + person.partner.name);
+                            Console.WriteLine("Is the same Person");
+                            Console.ReadKey();
+                            break;
                         }
+                        Functions.relationCheck(p1, p2);
                         Console.ReadKey ();
                         break;
                     case 0:
