@@ -37,7 +37,7 @@ namespace Program
                         p2.addPersonConnection(p1);
                         break;
                     case 3: // add child
-                        if (!UI.confirmationUser("Add Child")) break;
+                        if (!UI.confirmationUser("Add or RemoveChild")) break;
                         if (randomPerson.Count == 0)
                         {
                             Console.WriteLine("No Person in list yet!\n");
@@ -47,7 +47,7 @@ namespace Program
                         int mode;
                         do
                         {
-                            Console.WriteLine("Choose Person/ Add Person/ Exit (1/2/0): ");
+                            Console.WriteLine("Choose Person/ Add Person/ Remove Person/ Exit (1/2/3/0): ");
                             mode = Convert.ToInt32(Console.ReadLine());
                             if (mode == 0) 
                             { 
@@ -56,7 +56,7 @@ namespace Program
                             }
                             if (mode == 1)
                             {
-                                if (UI.confirmationUser("Add User")) p1 = UI.selectPersonUI(randomPerson);
+                                if (UI.confirmationUser("Add or Remove User")) p1 = UI.selectPersonUI(randomPerson);
                                 else
                                 {
                                     mode = 0;
@@ -76,7 +76,20 @@ namespace Program
                                     Console.WriteLine("Return to mode chosing!\n");
                                 }
                             }
-                        } while (1 > mode || mode > 2);
+                            else if (mode == 3)
+                            {
+                                if(UI.confirmationUser("Remove User"))
+                                {
+                                    p1 = UI.removePersonUI();
+                                    randomPerson.Remove(p1);
+                                }
+                            }
+                            else
+                            {
+                                mode = 0;
+                                Console.WriteLine("Return to mode chosing!\n");
+                            }
+                        } while (1 > mode || mode > 3);
                         mode = 0;
                         do
                         {

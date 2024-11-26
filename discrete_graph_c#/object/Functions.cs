@@ -235,6 +235,7 @@ namespace discrete_graph_c_
                     if (checkedPerson.step == person.step - 1)
                     {
                         AddParent(person, checkedPerson);
+                        RemoveParent(person, checkedPerson);
                         tmp = checkedPerson;
                         //Person[] parent_ = new Person[2];
                         //parent_[0] = checkedPerson;
@@ -244,6 +245,7 @@ namespace discrete_graph_c_
                     }
                 }
                 tmp.addChild(person);
+                tmp.removeChild(person);
                 //tmp.addChild(person.partner);
             }
             return list;
@@ -276,6 +278,34 @@ namespace discrete_graph_c_
                     A.partner.parent[1] = B.partner;
                 }
                 else if (A.partner.parent[1] == null && A.partner.parent[0] != B) A.partner.parent[1] = B.partner;
+            }
+        }
+
+        public static void RemoveParent(Person A, Person B)
+        {
+            if (A == null || B == null) return;
+
+            // Check if B is one of A's parents and remove it
+            for (int i = 0; i < A.parent.Length; i++)
+            {
+                if (A.parent[i] == B)
+                {
+                    A.parent[i] = null; // Remove parent B
+                    break; // Exit the loop after removing
+                }
+            }
+
+            // Handle A's partner's parents
+            if (A.partner != null && A.partner.parent != null)
+            {
+                for (int i = 0; i < A.partner.parent.Length; i++)
+                {
+                    if (A.partner.parent[i] == B)
+                    {
+                        A.partner.parent[i] = null; // Remove parent B from partner's parents
+                        break; // Exit the loop after removing
+                    }
+                }
             }
         }
     }

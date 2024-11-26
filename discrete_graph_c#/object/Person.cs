@@ -80,8 +80,29 @@ namespace discrete_graph_c_
             this.partner = A;
             return;
         }
+        public void removeChild(Person child)
+        {
+            if(!this.child. Contains(child) || this.partner == null)  return;
+            this.child.Remove(child);
+            this.partner.child.Remove(child);
+            child.parent[0] = null;
+            child.parent[1] = null;
 
-       
-        
+            child.step = 0;
+
+            if (child.partner != null)
+            {
+                child.partner.parent = null;
+                child.partner.step = 0;
+            }
+
+            return;
+        }
+        public void removePersonConnection(Person A)
+        {
+            if (this.partner != null) return;
+            this.partner = null;
+            return;
+        }
     }
 }

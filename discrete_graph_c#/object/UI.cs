@@ -28,6 +28,7 @@ namespace discrete_graph_c_
                          "\n4. Print Tree" +
                          "\n5. Read File" +
                          "\n6. Create Tree" +
+                         "\n7. Delete Person from Tree" +
                          "\n\nSelect: ");
                 tmp = Console.ReadLine();
                 if (tmp.Length < 2 && tmp != "")
@@ -42,9 +43,11 @@ namespace discrete_graph_c_
                     "\nPress any key to try again!");
                 Console.ReadKey();
                 mode = -1;
-            } while (mode < 0 || mode > 6);
+            } while (mode < 0 || mode > 7);
             return mode;
         }
+
+        private static List<Person> person = new List<Person>();
 
         // Add Person UI
         public static Person addPersonUI() {
@@ -63,7 +66,28 @@ namespace discrete_graph_c_
             person.bDay = DateTime.Parse(bDay, new CultureInfo("en-GB"));
             return person;
         }
+        public static Person removePersonUI()
+        {
+            Console.WriteLine("\n====================" +
+                "\n/To Exit Type Exit in name/");
+            Console.Write("Remove member:\n" +
+                          "Name: ");
+            string nameToRemove = Console.ReadLine();
+            if (nameToRemove.Equals("Exit", StringComparison.OrdinalIgnoreCase))
+                return null;
 
+            Person personToRemove = person.FirstOrDefault(p => p.name.Equals(nameToRemove, StringComparison.OrdinalIgnoreCase));
+            if (personToRemove != null)
+            {
+                person.Remove(personToRemove);
+                return personToRemove; // Return the removed person
+            }
+            else
+            {
+                Console.WriteLine("Person not found.");
+                return null; // Return null if no person was found
+            }
+        }
         // Select A Person UI
         public static Person selectPersonUI(List<Person> list) 
         {

@@ -37,3 +37,42 @@ D:\oop code\discrete_graph_c#\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Di
 D:\oop code\discrete_graph_c#\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 D:\oop code\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.csproj.AssemblyReference.cache
 D:\oop code\discrete_graph_c#\obj\Debug\net8.0\discrete.DE56EF5D.Up2Date
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\discrete_graph_c#.exe
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\discrete_graph_c#.deps.json
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\discrete_graph_c#.runtimeconfig.json
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\discrete_graph_c#.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\discrete_graph_c#.pdb
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\Google.Protobuf.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\MySql.Data.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\System.IO.Pipelines.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\System.Security.Permissions.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\System.Text.Json.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\System.Windows.Extensions.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\ZstdSharp.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.csproj.AssemblyReference.cache
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.GeneratedMSBuildEditorConfig.editorconfig
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.AssemblyInfoInputs.cache
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.AssemblyInfo.cs
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.csproj.CoreCompileInputs.cache
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.sourcelink.json
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete.DE56EF5D.Up2Date
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\refint\discrete_graph_c#.dll
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.pdb
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\discrete_graph_c#.genruntimeconfig.cache
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\discrete_graph_c#\obj\Debug\net8.0\ref\discrete_graph_c#.dll
