@@ -279,6 +279,7 @@ namespace discrete_graph_c_
                     if (checkedPerson.step == person.step - 1)
                     {
                         AddParent(person, checkedPerson);
+                        RemoveParent(person, checkedPerson);
                         tmp = checkedPerson;
                         //Person[] parent_ = new Person[2];
                         //parent_[0] = checkedPerson;

@@ -89,6 +89,13 @@ namespace discrete_graph_c_
             this.partner = A;
             return;
         }
+        public void removeChild(Person child)
+        {
+            if(!this.child. Contains(child) || this.partner == null)  return;
+            this.child.Remove(child);
+            this.partner.child.Remove(child);
+            child.parent[0] = null;
+            child.parent[1] = null;
 
         public string createID()
         {
