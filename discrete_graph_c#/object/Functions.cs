@@ -323,6 +323,28 @@ namespace discrete_graph_c_
                 else if (A.partner.parent[1] == null && A.partner.parent[0] != B) A.partner.parent[1] = B.partner;
             }
         }
+        public static void RemoveParent(Person A, Person B)
+        {
+            if (A == null || B == null) return;
+
+            // Remove B from A's parent array
+            if (A.parent != null)
+            {
+                // Clear the reference to the first parent
+                if (A.parent[0] == B)   A.parent[0] = null; 
+                // Clear the reference to the second parent
+                else if (A.parent[1] == B)  A.parent[1] = null; 
+            }
+
+            // Handle A's partner's parents
+            if (A.partner != null && !string.IsNullOrEmpty(A.partner.name) && A.partner.parent != null)
+            {
+                // Clear the reference to the first parent of the partner
+                if (A.partner.parent[0] == B)   A.partner.parent[0] = null; 
+                // Clear the reference to the second parent of the partner
+                else if (A.partner.parent[1] == B.partner)   A.partner.parent[1] = null; 
+            }
+        }
 
         public static void printList(List<Person> randomPerson)
         {

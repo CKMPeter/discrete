@@ -91,12 +91,39 @@ namespace discrete_graph_c_
         }
         public void removeChild(Person child)
         {
-            if(!this.child. Contains(child) || this.partner == null)  return;
-            this.child.Remove(child);
-            this.partner.child.Remove(child);
-            child.parent[0] = null;
-            child.parent[1] = null;
+            if (child == null || this.child == null || this.partner == null)
+                return;
 
+            // Remove the child from the current parent's list of children
+            if (this.child.Contains(child))
+            {
+                this.child.Remove(child);
+            }
+            // Remove the child from the partner's list of children
+            if (this.partner.child.Contains(child))
+            {
+                this.partner.child.Remove(child);
+            }
+            // Clear the parent references in the child
+            if (child.parent != null)
+            {
+                if (child.parent[0] == this) child.parent[0] = null; // Clear reference to this parent
+                if (child.parent[1] == this.partner) child.parent[1] = null; // Clear reference to the partner
+            }
+            child.step = 0;
+            // If the child has a partner, clear the partner's parent reference
+            if (child.partner != null)
+            {
+                child.partner.parent = null; // Clear the parent's reference
+                child.partner.step = 0; // Reset step if needed
+            }
+        }
+        public void removePersonConnection(Person A)
+        {
+            if (this.partner == A)  this.partner = null;
+            if (A.partner == this)  A.partner = null;
+            return;
+        }
         public string createID()
         {
             DateTime dateTime = this.bDay;

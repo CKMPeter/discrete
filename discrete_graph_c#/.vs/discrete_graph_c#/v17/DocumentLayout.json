@@ -3,8 +3,7 @@
   "WorkspaceRootPath": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|D:\\oop code\\discrete_graph_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\discrete_graph_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +14,6 @@
       "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|D:\\oop code\\discrete_graph_c#\\object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
 =======
       "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\discrete_graph_c#\\object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> bao-code
       "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -49,18 +47,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UI.cs",
-              "DocumentMoniker": "D:\\oop code\\discrete_graph_c#\\object\\UI.cs",
+              "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\UI.cs",
               "RelativeDocumentMoniker": "object\\UI.cs",
-              "ToolTip": "D:\\oop code\\discrete_graph_c#\\object\\UI.cs",
+              "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\UI.cs",
               "RelativeToolTip": "object\\UI.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAA7wB4AAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T06:35:46.791Z"
             },
@@ -68,11 +65,11 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Person.cs",
-              "DocumentMoniker": "D:\\oop code\\discrete_graph_c#\\object\\Person.cs",
+              "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Person.cs",
               "RelativeDocumentMoniker": "object\\Person.cs",
-              "ToolTip": "D:\\oop code\\discrete_graph_c#\\object\\Person.cs",
+              "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Person.cs",
               "RelativeToolTip": "object\\Person.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAADwvygAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHwAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T06:24:33.095Z"
             },
@@ -80,39 +77,25 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Functions.cs",
-              "DocumentMoniker": "D:\\oop code\\discrete_graph_c#\\object\\Functions.cs",
+              "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Functions.cs",
               "RelativeDocumentMoniker": "object\\Functions.cs",
-              "ToolTip": "D:\\oop code\\discrete_graph_c#\\object\\Functions.cs",
+              "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Functions.cs",
               "RelativeToolTip": "object\\Functions.cs",
               "ViewState": "AQIAAEABAAAAAAAAAAAqwE4BAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T07:00:08.767Z",
+              "WhenOpened": "2024-11-27T16:42:18.022Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-=======
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
->>>>>>> bao-code
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\Program.cs",
               "RelativeToolTip": "Program.cs",
 <<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-              "ViewState": "AQIAAH0AAAAAAAAAAAAuwJsAAAATAAAA",
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
               "ViewState": "AQIAAAgAAAAAAAAAAAA+wIUAAAAwAAAA",
->>>>>>> 3ed9850f03466681960c629af12d5c95e54deae5
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T06:22:03.995Z",
 =======
@@ -158,8 +141,7 @@
               "RelativeToolTip": "object\\Functions.cs",
               "ViewState": "AQIAAAYBAAAAAAAAAAAwwDYBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T10:11:09.36Z",
->>>>>>> bao-code
+              "WhenOpened": "2024-11-27T16:42:18.038Z",
               "EditorCaption": ""
             }
           ]
