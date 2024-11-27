@@ -141,7 +141,7 @@ namespace Program
                             Console.ReadKey();
                             break;
                         }
-                        Functions.relationCheck(p1, p2);
+                        Functions.DetermineRelationship(p1, p2);
                         Console.ReadKey ();
                         break;
                     case 0:

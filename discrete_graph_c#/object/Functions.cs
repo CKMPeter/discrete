@@ -37,14 +37,14 @@ namespace discrete_graph_c_
                             if (c == ',')
                             {
                                 // Append A to lines and reset A
-                                A = A + c +count;
+                                A = A + c + count;
                             }
                             else if (char.IsLetterOrDigit(c) || c == '(' || c == ')' || c == '/') // Check for alphanumeric or parentheses
                             {
                                 A += c;
                             }
                         }
-                        lines.Add(count+A);
+                        lines.Add(count + A);
                         A = "";
                         count = 0;
                         //write the line to console window
@@ -73,24 +73,24 @@ namespace discrete_graph_c_
             List<Person> checkedList = new List<Person>();
             try
             {
-                using (StreamWriter wt = new StreamWriter (pth))
+                using (StreamWriter wt = new StreamWriter(pth))
                 {
-                    foreach(Person person in randomPerson)
+                    foreach (Person person in randomPerson)
                     {
                         // Skip if the person's partner has already been checked
                         if (person.partner != null && checkedList.Contains(person.partner))
                             continue;
                         checkedList.Add(person);
                         int gender, gender_;
-                        gender = gender_ = 0 ;
+                        gender = gender_ = 0;
                         if (person.gender) gender = 1;
                         if (person.partner.gender) gender_ = 1;
-                        if (person.bDay != default(DateTime)) wt.Write(new string('-', person.step) + person.name + "("+ person.bDay.Date.ToString("dd/MM/yyyy")+ ")"+gender+",");
-                        else wt.Write(new string('-', person.step) + person.name + "()"+gender+",");
-                        if (person.partner!= null)
+                        if (person.bDay != default(DateTime)) wt.Write(new string('-', person.step) + person.name + "(" + person.bDay.Date.ToString("dd/MM/yyyy") + ")" + gender + ",");
+                        else wt.Write(new string('-', person.step) + person.name + "()" + gender + ",");
+                        if (person.partner != null)
                         {
-                            if(person.partner.bDay != default(DateTime)) wt.WriteLine(person.partner.name + "(" + person.partner.bDay.Date.ToString("dd/MM/yyyy") + ")"+gender_);
-                            else wt.WriteLine(person.partner.name + "()"+gender_);
+                            if (person.partner.bDay != default(DateTime)) wt.WriteLine(person.partner.name + "(" + person.partner.bDay.Date.ToString("dd/MM/yyyy") + ")" + gender_);
+                            else wt.WriteLine(person.partner.name + "()" + gender_);
                         }
                     }
                 }
@@ -134,7 +134,7 @@ namespace discrete_graph_c_
             if (person.partner != null)
             {
                 Console.Write($" {person.partner.name})");
-            }else Console.Write(")");
+            } else Console.Write(")");
 
             // Traverse children
             foreach (var child in person.child)
@@ -194,12 +194,12 @@ namespace discrete_graph_c_
         {
             Person tmp = new Person();
             Person tmp_ = new Person();
-            List <Person> list = new List<Person>();
+            List<Person> list = new List<Person>();
             int step;
             string name, dob;
             bool gender;
             int flag = 0;
-            foreach(string line in lines)
+            foreach (string line in lines)
             {
                 name = "";
                 dob = "";
@@ -214,7 +214,7 @@ namespace discrete_graph_c_
                             if (flag != 0) dob += line[j];
                             if (line[j] != '(')
                             {
-                                if(flag == 0)name += line[j];
+                                if (flag == 0) name += line[j];
                             }
                             else flag = j;
                         }
@@ -236,7 +236,7 @@ namespace discrete_graph_c_
                             if (flag != 0) name = line[m] + name;
                             if (line[m] != '(')
                             {
-                                if(flag == 0) dob = line[m] + dob;
+                                if (flag == 0) dob = line[m] + dob;
                             }
                             else flag = m;
                         }
@@ -253,8 +253,8 @@ namespace discrete_graph_c_
                         list.Add(tmp_);
 
                         //add Partner for each line
-                        
-                        
+
+
                         break;
                     }
                 }
@@ -328,63 +328,29 @@ namespace discrete_graph_c_
         {
             if (randomPerson.Count == 0) return;
             Console.WriteLine("====================================================");
-            foreach (var person in randomPerson) { 
+            foreach (var person in randomPerson) {
                 Console.WriteLine("Name: " + person.name + "| | ID: " + person.PersonID);
             }
         }
 
-        public static void relationCheck(Person A, Person B)
+        public static void DetermineRelationship(Person person1, Person person2)
         {
-            if (A == null || B == null) return;
-            string relation = "";
-            string tmp;
-            int distance = Math.Abs(A.step - B.step);
-            if (distance == 0) 
+            if (person1.child.Contains(person2))
             {
-                Console.WriteLine(A.name + "and " + B.name + " are Partner.");
-                return;
+                Console.WriteLine($"{person1.name} is a parent of {person2.name}.");
             }
-            if (A.step - B.step > 0 )
+            else if (person2.child.Contains(person1))
             {
-                Console.Write(B.name + " is " + A.name + "'s ");
-                if (distance < 2)
-                {
-                    if (B.gender) Console.Write("Father");
-                    else Console.Write("Mother");
-                    Console.Write(A.name + " is " + B.name + "'s Child");
-                }
-                else
-                {
-                    tmp = "";
-                    for (int i = 1; i < distance; i++)
-                    {
-                        tmp += "Great ";
-                    }
-                    if (B.gender) Console.Write(tmp + "Grand Father");
-                    else Console.Write(tmp + "Grand Mother");
-                    Console.Write(A.name + " is " + B.name + "'s " + tmp + "Grand Child");
-                }
+                Console.WriteLine($"{person1.name} is a child of {person2.name}.");
+            }
+            else if ((person1.parent != null && (person1.parent[0] == person2 || person1.parent[1] == person2)) ||
+                     (person2.parent != null && (person2.parent[0] == person1 || person2.parent[1] == person1)))
+            {
+                Console.WriteLine($"{person1.name } and {person2.name} are siblings.");
             }
             else
             {
-                Console.Write(A.name + " is " + B.name + "'s ");
-                if (distance < 2)
-                {
-                    if (A.gender) Console.Write("Father");
-                    else Console.Write("Mother");
-                    Console.Write(B.name + " is " + A.name + "'s Child");
-                }
-                else
-                {
-                    tmp = "";
-                    for (int i = 1; i < distance; i++)
-                    {
-                        tmp += "Great ";
-                    }
-                    if (A.gender) Console.Write("Grand Father");
-                    else Console.Write("Grand Mother");
-                    Console.Write(B.name + " is " + A.name + "'s " + tmp + "Grand Child");
-                }
+                Console.WriteLine($"{person1.name} and {person2.name} have no direct relationship.");
             }
         }
     }
