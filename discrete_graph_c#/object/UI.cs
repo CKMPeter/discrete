@@ -24,11 +24,12 @@ namespace discrete_graph_c_
                 Console.Write("Mode Selection:" +
                          "\n1. Add Person" +
                          "\n2. Update Person" +
-                         "\n3. Print Tree" +
-                         "\n4. Print File" +
-                         "\n5. Read File" +
-                         "\n6. Create Tree" +
-                         "\n7. Check Relationship" +
+                         "\n3. Delete Person" +
+                         "\n4. Print Tree" +
+                         "\n5. Print File" +
+                         "\n6. Read File" +
+                         "\n7. Create Tree" +
+                         "\n8. Check Relationship" +
                          "\n\nSelect: ");
                 tmp = Console.ReadLine();
                 if (tmp.Length < 2 && tmp != "")
@@ -43,7 +44,7 @@ namespace discrete_graph_c_
                     "\nPress any key to try again!");
                 Console.ReadKey();
                 mode = -1;
-            } while (mode < 0 || mode > 7);
+            } while (mode < 0 || mode > 8);
             return mode;
         }
 

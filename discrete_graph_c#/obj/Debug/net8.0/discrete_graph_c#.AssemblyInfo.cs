@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("discrete_graph_c#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1549065fb448609c0162a5f7791d2893e538ac2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ed9850f03466681960c629af12d5c95e54deae5")]
 [assembly: System.Reflection.AssemblyProductAttribute("discrete_graph_c#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("discrete_graph_c#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

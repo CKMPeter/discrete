@@ -10,7 +10,7 @@ namespace Program
     {
         static public void Main(string[] args)
         {
-            string str = "D:/oop code/tree.txt";
+            string str = "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\tree.txt";
             UI program = new UI();
             List<Person> randomPerson = new List<Person>();
             List<String> list = new List<String>(); 
@@ -87,7 +87,58 @@ namespace Program
                             p1.bDay = birthDay;
                         }
                         break;
-                    case 3: // print tree
+                    case 3: // remove a person
+                        Functions.printList(randomPerson);
+                        p1 = UI.removePersonUI();
+                        if (randomPerson.Count == 0)
+                        {
+                            Console.WriteLine("Remove Completed!\n");
+                            break;
+                        }
+                        Console.WriteLine("====================================" +
+                            "\nWhat is the role of this person?\n");
+                        role = " ";
+                        do
+                        {
+                            role = Console.ReadLine();
+                            role = role.Trim().ToLower();
+                            if (UI.confirmationUser(role))
+                            {
+                                if (role == "partner") // remove connection
+                                {
+                                    Console.WriteLine("select This Person Partner:\n");
+                                    p2 = UI.selectPersonUI(randomPerson);
+                                    if (p1 == null || p2 == null) break;
+                                    p1.removePersonConnection(p2);
+                                    p2.removePersonConnection(p1);
+                                    break;
+                                }
+                                else if (role == "child") // add child
+                                {
+                                    mode_ = 0;
+                                    do
+                                    {
+                                        Console.WriteLine("PARENT\n");
+                                        p2 = UI.selectPersonUI(randomPerson);
+                                        if (p2 == p1)
+                                        {
+                                            Console.WriteLine("Can not be the same Person!\n");
+                                            mode_ = 1;
+                                        }
+                                        else if (p2.partner == p1)
+                                        {
+                                            Console.WriteLine("Can not be both role!\n");
+                                            mode_ = 1;
+                                        }
+                                    } while (mode_ == 1);
+
+                                    p2.removeChild(p1);
+                                }
+                            }
+                        } while (role != "child" || role != "partner");
+                        randomPerson.Remove(p1);
+                        break;
+                    case 4: // print tree
                         if (randomPerson.Count == 0)
                         {
                             Console.WriteLine("No Person in list yet!\n");
@@ -114,10 +165,10 @@ namespace Program
                             }
                         } while (true);
                         break;
-                    case 4: // print file
-                        Functions.printToFile(randomPerson, "D:/oop code/tmp.txt");
+                    case 5: // print file
+                        Functions.printToFile(randomPerson, "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\tree.txt");
                         break;
-                    case 5: //read file
+                    case 6: //read file
                         list = Functions.readFile(str);
                         randomPerson = Functions.fromStringCreateInfo(list);
                         foreach(Person person in randomPerson)
@@ -126,12 +177,12 @@ namespace Program
                         }
                         Console.ReadKey();
                         break;
-                    case 6: //create tree
+                    case 7: //create tree
                         randomPerson = Functions.CreateTreeFromList(randomPerson);
                         Console.WriteLine("complete!");
                         Console.ReadKey();
                         break;
-                    case 7: //check relationshop
+                    case 8: //check relationshop
                         Functions.printList(randomPerson);
                         p1 = UI.selectPersonUI(randomPerson);
                         p2 = UI.selectPersonUI(randomPerson);
