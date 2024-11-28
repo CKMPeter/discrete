@@ -357,9 +357,15 @@ namespace discrete_graph_c_
 
         public static void DetermineRelationship(Person person1, Person person2)
         {
+            string role = "";
             if (person1.child.Contains(person2))
             {
-                Console.WriteLine($"{person1.name} is a parent of {person2.name}.");
+                if (person1.gender)
+                {
+                    role = "father";
+                }
+                else role = "mother";
+                Console.WriteLine($"{person1.name} is a ({role}) of {person2.name}.");
             }
             else if (person2.child.Contains(person1))
             {
