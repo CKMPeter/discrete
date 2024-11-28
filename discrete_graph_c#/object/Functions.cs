@@ -381,5 +381,13 @@ namespace discrete_graph_c_
                 Console.WriteLine($"{person1.name} and {person2.name} have no direct relationship.");
             }
         }
+
+        public static void printListPerson(List<Person> randomPerson)
+        {
+            foreach (Person person in randomPerson)
+            {
+                Console.WriteLine(person.name + " " + person.bDay.ToString("dd/MM/yyyy") + " " + person.PersonID);
+            }
+        }
     }
 }
