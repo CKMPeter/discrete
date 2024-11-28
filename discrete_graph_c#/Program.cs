@@ -10,7 +10,7 @@ namespace Program
     {
         static public void Main(string[] args)
         {
-            string str = "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\tree.txt";
+            string str = "<Your_Tree.txt_Path>";
             UI program = new UI();
             List<Person> randomPerson = new List<Person>();
             List<String> list = new List<String>(); 
@@ -139,6 +139,7 @@ namespace Program
                         randomPerson.Remove(p1);
                         break;
                     case 4: // print tree
+                        Functions.printListPerson(randomPerson);
                         if (randomPerson.Count == 0)
                         {
                             Console.WriteLine("No Person in list yet!\n");
@@ -166,7 +167,7 @@ namespace Program
                         } while (true);
                         break;
                     case 5: // print file
-                        Functions.printToFile(randomPerson, "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\tree.txt");
+                        Functions.printToFile(randomPerson, "<Your_Tree.txt_Path>");
                         break;
                     case 6: //read file
                         list = Functions.readFile(str);
