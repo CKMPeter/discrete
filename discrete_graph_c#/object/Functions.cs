@@ -289,7 +289,7 @@ namespace discrete_graph_c_
                     }
                 }
                 tmp.addChild(person);
-                tmp.addChild(person.partner);
+                //tmp.addChild(person.partner);
             }
             return list;
         }
@@ -387,6 +387,88 @@ namespace discrete_graph_c_
             foreach (Person person in randomPerson)
             {
                 Console.WriteLine(person.name + " " + person.bDay.ToString("dd/MM/yyyy") + " " + person.PersonID);
+            }
+        }
+
+        public static void printFamilyTree(Person member, string prefix = "", bool isLast = true)
+        {
+            // In tên của thành viên hiện tại
+            Console.WriteLine(prefix + (isLast ? "└── " : "├── ") + member.name + ", " + member.partner.name);
+
+            // Tạo prefix cho các con
+            prefix += isLast ? "    " : "│   ";
+
+            // Duyệt qua danh sách các con
+            for (int i = 0; i < member.child.Count; i++)
+            {
+                printFamilyTree(member.child[i], prefix, i == member.child.Count - 1);
+            }
+        }
+
+        public static int GetTreeWidth(Person member)
+        {
+            if (member.child.Count == 0) return 1;
+
+            int width = 0;
+            foreach (var child in member.child)
+            {
+                width += GetTreeWidth(child);
+            }
+            return width;
+        }
+
+        // Hàm đệ quy để in cây gia phả ở giữa console
+        public static void PrintFamilyTreeCentered(Person member, int depth = 0, int position = 40, int parentWidth = 80)
+        {
+            // Get parent's and partner's details
+            string birthDate = member.bDay.Year > 1 ? member.bDay.ToString("dd-MM-yyyy") : "N/A";
+            string partnerInfo = member.partner != null
+                ? $" - {member.partner.name} ({(member.partner.bDay.Year > 1 ? member.partner.bDay.ToString("dd-MM-yyyy") : "N/A")})"
+                : "";
+
+            // Print parent and partner
+            Console.SetCursorPosition(position, depth * 3);
+            Console.WriteLine($"{member.name} ({birthDate}){partnerInfo}");
+
+            // If no children, return
+            if (member.child == null || member.child.Count == 0) return;
+
+            // Calculate total width for children
+            int totalWidth = GetTreeWidth(member);
+            int step = parentWidth / totalWidth;
+
+            // Initial position for children
+            int currentPosition = position - (totalWidth - 1) * step / 2;
+
+            // Draw vertical line from parent to children
+            Console.SetCursorPosition(position, depth * 3 + 1);
+            Console.Write("|");
+
+            // Iterate over children
+            foreach (var child in member.child)
+            {
+                int childTreeWidth = GetTreeWidth(child);
+                int childPosition = currentPosition + (childTreeWidth - 1) * step / 2;
+
+                // Horizontal line connecting parent to child
+                int start = Math.Min(position, childPosition);
+                int end = Math.Max(position, childPosition);
+
+                for (int x = start; x <= end; x++)
+                {
+                    Console.SetCursorPosition(x, depth * 3 + 2);
+                    Console.Write("-");
+                }
+
+                // Vertical line below the child
+                Console.SetCursorPosition(childPosition, depth * 3 + 3);
+                Console.Write("|");
+
+                // Recursively print the child's subtree
+                PrintFamilyTreeCentered(child, depth + 1, childPosition, step * childTreeWidth);
+
+                // Add a buffer space after this child's branch
+                currentPosition += step * childTreeWidth + step / 2;
             }
         }
     }

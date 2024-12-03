@@ -25,11 +25,13 @@ namespace discrete_graph_c_
                          "\n1. Add Person" +
                          "\n2. Update Person" +
                          "\n3. Delete Person" +
-                         "\n4. Print Tree" +
+                         "\n4. Print List" +
                          "\n5. Print File" +
                          "\n6. Read File" +
                          "\n7. Create Tree" +
                          "\n8. Check Relationship" +
+                         "\n9. Print Tree (Dictionaty)" +
+                         "\n10. Print Tree (Verically) "+
                          "\n\nSelect: ");
                 tmp = Console.ReadLine();
                 if (tmp.Length < 2 && tmp != "")
@@ -44,7 +46,7 @@ namespace discrete_graph_c_
                     "\nPress any key to try again!");
                 Console.ReadKey();
                 mode = -1;
-            } while (mode < 0 || mode > 8);
+            } while (mode < 0 || mode > 10);
             return mode;
         }
 

@@ -138,33 +138,34 @@ namespace Program
                         } while (role != "child" || role != "partner");
                         randomPerson.Remove(p1);
                         break;
-                    case 4: // print tree
-                        Functions.printListPerson(randomPerson);
-                        if (randomPerson.Count == 0)
-                        {
-                            Console.WriteLine("No Person in list yet!\n");
-                            Console.ReadKey();
-                            break;
-                        }
-                        p1 = UI.selectPersonUI(randomPerson);
-                        do
-                        {
-                            Console.Write("Select dfs or bfs:");
-                            string typeTraverse = Console.ReadLine();
-                            typeTraverse = typeTraverse.Trim().ToLower();
-                            if (typeTraverse == "dfs")
-                            {
-                                Functions.dfsTraverse(p1);
-                                Console.ReadKey();
-                                break;
-                            }
-                            else if (typeTraverse == "bfs")
-                            {
-                                Functions.bfsTraverse(p1);
-                                Console.ReadKey();
-                                break;
-                            }
-                        } while (true);
+                    case 4: // print list
+                        Functions.printList(randomPerson);
+                        //Functions.printListPerson(randomPerson);
+                        //if (randomPerson.Count == 0)
+                        //{
+                        //    Console.WriteLine("No Person in list yet!\n");
+                        //    Console.ReadKey();
+                        //    break;
+                        //}
+                        //p1 = UI.selectPersonUI(randomPerson);
+                        //do
+                        //{
+                        //    Console.Write("Select dfs or bfs:");
+                        //    string typeTraverse = Console.ReadLine();
+                        //    typeTraverse = typeTraverse.Trim().ToLower();
+                        //    if (typeTraverse == "dfs")
+                        //    {
+                        //        Functions.dfsTraverse(p1);
+                        //        Console.ReadKey();
+                        //        break;
+                        //    }
+                        //    else if (typeTraverse == "bfs")
+                        //    {
+                        //        Functions.bfsTraverse(p1);
+                        //        Console.ReadKey();
+                        //        break;
+                        //    }
+                        //} while (true);
                         break;
                     case 5: // print file
                         Functions.printToFile(randomPerson, "<Your_Tree.txt_Path>");
@@ -195,6 +196,13 @@ namespace Program
                         }
                         Functions.DetermineRelationship(p1, p2);
                         Console.ReadKey ();
+                        break;
+                    case 9: //Print in a Directory 
+                        Functions.PrintFamilyTree(randomPerson[0]);
+                        Console.ReadKey();
+                        break;
+                    case 10:
+                        Functions.PrintFamilyTreeCentered(randomPerson[0]);
                         break;
                     case 0:
                         state = false;
