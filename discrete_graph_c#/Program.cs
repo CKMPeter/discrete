@@ -199,10 +199,12 @@ namespace Program
                         break;
                     case 9: //Print in a Directory 
                         Functions.PrintFamilyTree(randomPerson[0]);
+                        UI.showPersonInformationUI(randomPerson);
                         Console.ReadKey();
                         break;
                     case 10:
                         Functions.PrintFamilyTreeCentered(randomPerson[0]);
+                        UI.showPersonInformationUI(randomPerson);
                         break;
                     case 0:
                         state = false;

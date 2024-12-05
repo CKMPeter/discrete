@@ -106,7 +106,28 @@ namespace discrete_graph_c_
             Console.WriteLine("No Person Was Found!");
             return null;
         }
-
+        // Show Person Total information
+        public static Person showPersonInformationUI(List<Person> list)
+        {
+            Console.WriteLine("\n====================================");
+            if (list.Count <= 0) return null;
+            Console.Write("Select Person: " +
+                            "\nPersonID:");
+            string pID = Console.ReadLine();
+            foreach (Person person in list)
+            {
+                Console.WriteLine("\n====================================");
+                if (person.PersonID == pID)
+                {
+                    Console.WriteLine("Person Name: " + person.name);
+                    Console.WriteLine("Person Birthday: " + person.bDay.ToString("dd-MM-yyyy"));
+                    Console.WriteLine("Gender: " + person.gender);
+                    Console.WriteLine("Relation: " + Functions.DetermineRelationship);
+                }
+            }
+            Console.WriteLine("No Person Was Found!");
+            return null;
+        }
         public static bool confirmationUser(string str)
         {
             string txt = "";

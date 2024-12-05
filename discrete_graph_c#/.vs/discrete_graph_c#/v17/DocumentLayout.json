@@ -3,41 +3,20 @@
   "WorkspaceRootPath": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\discrete_graph_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|d:\\oop code\\discrete_graph_c#\\object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|D:\\oop code\\discrete_graph_c#\\object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
       "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\discrete_graph_c#\\object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\discrete_graph_c#\\object\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-<<<<<<< HEAD
-=======
-    },
-    {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|d:\\oop code\\discrete_graph_c#\\object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
       "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\discrete_graph_c#\\object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\discrete_graph_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> bao-code
-<<<<<<< Updated upstream
-=======
->>>>>>> 3ed9850f03466681960c629af12d5c95e54deae5
->>>>>>> Stashed changes
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\discrete_graph_c#\\object\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FAC2B4-1541-41B9-BAC0-2A86FEBB0012}|discrete_graph_c#.csproj|solutionrelative:object\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,19 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UI.cs",
               "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\UI.cs",
               "RelativeDocumentMoniker": "object\\UI.cs",
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\UI.cs",
               "RelativeToolTip": "object\\UI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAARAAAA",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAAHYAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T06:35:46.791Z"
+              "WhenOpened": "2024-11-27T16:42:17.844Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -69,9 +49,10 @@
               "RelativeDocumentMoniker": "object\\Person.cs",
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Person.cs",
               "RelativeToolTip": "object\\Person.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHwAAAATAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAA4wHwAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T06:24:33.095Z"
+              "WhenOpened": "2024-11-27T16:42:18.009Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -81,65 +62,20 @@
               "RelativeDocumentMoniker": "object\\Functions.cs",
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Functions.cs",
               "RelativeToolTip": "object\\Functions.cs",
-              "ViewState": "AQIAAEABAAAAAAAAAAAqwE4BAAAwAAAA",
+              "ViewState": "AQIAAIABAAAAAAAAAAA4wKgBAAB4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T16:42:18.022Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\Program.cs",
               "RelativeToolTip": "Program.cs",
-<<<<<<< HEAD
-              "ViewState": "AQIAAAgAAAAAAAAAAAA+wIUAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T06:22:03.995Z",
-=======
-              "ViewState": "AQIAAG0AAAAAAAAAAAAQwIgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T06:22:03.995Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UI.cs",
-              "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\UI.cs",
-              "RelativeDocumentMoniker": "object\\UI.cs",
-              "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\UI.cs",
-              "RelativeToolTip": "object\\UI.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwCgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T10:14:07.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Person.cs",
-              "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Person.cs",
-              "RelativeDocumentMoniker": "object\\Person.cs",
-              "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Person.cs",
-              "RelativeToolTip": "object\\Person.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAcwGEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T10:11:53.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Functions.cs",
-              "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Functions.cs",
-              "RelativeDocumentMoniker": "object\\Functions.cs",
-              "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\discrete_graph_c#\\object\\Functions.cs",
-              "RelativeToolTip": "object\\Functions.cs",
-              "ViewState": "AQIAAAYBAAAAAAAAAAAwwDYBAAAAAAAA",
+              "ViewState": "AQIAALgAAAAAAAAAAAAiwMsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T16:42:18.038Z",
               "EditorCaption": ""

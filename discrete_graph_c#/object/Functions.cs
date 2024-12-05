@@ -416,7 +416,6 @@ namespace discrete_graph_c_
             }
             return width;
         }
-
         // Hàm đệ quy để in cây gia phả ở giữa console
         public static void PrintFamilyTreeCentered(Person member, int depth = 0, int position = 40, int parentWidth = 80)
         {
