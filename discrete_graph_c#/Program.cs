@@ -10,7 +10,7 @@ namespace Program
     {
         static public void Main(string[] args)
         {
-            string str = "<Your_Tree.txt_Path>";
+            string str = "D:/oop code/tree.txt";
             UI program = new UI();
             List<Person> randomPerson = new List<Person>();
             List<String> list = new List<String>(); 
@@ -140,6 +140,7 @@ namespace Program
                         break;
                     case 4: // print list
                         Functions.printList(randomPerson);
+                        Console.ReadKey();
                         //Functions.printListPerson(randomPerson);
                         //if (randomPerson.Count == 0)
                         //{
@@ -168,7 +169,7 @@ namespace Program
                         //} while (true);
                         break;
                     case 5: // print file
-                        Functions.printToFile(randomPerson, "<Your_Tree.txt_Path>");
+                        Functions.printToFile(randomPerson, str);
                         break;
                     case 6: //read file
                         list = Functions.readFile(str);
@@ -198,13 +199,13 @@ namespace Program
                         Console.ReadKey ();
                         break;
                     case 9: //Print in a Directory 
-                        Functions.PrintFamilyTree(randomPerson[0]);
-                        UI.showPersonInformationUI(randomPerson);
+                        Functions.printFamilyTree(randomPerson[0]);
                         Console.ReadKey();
                         break;
                     case 10:
+                        Console.Clear();
                         Functions.PrintFamilyTreeCentered(randomPerson[0]);
-                        UI.showPersonInformationUI(randomPerson);
+                        Console.ReadKey();
                         break;
                     case 0:
                         state = false;
@@ -212,7 +213,6 @@ namespace Program
                     default:
                         Console.WriteLine("please enter a mode!\n");
                         continue;
-                        break;
                 }
             }
             return;

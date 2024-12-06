@@ -351,7 +351,7 @@ namespace discrete_graph_c_
             if (randomPerson.Count == 0) return;
             Console.WriteLine("====================================================");
             foreach (var person in randomPerson) {
-                Console.WriteLine("Name: " + person.name + "| | ID: " + person.PersonID);
+                Console.WriteLine("Name: " + person.name + "| | ID: " + person.PersonID + "| | Parent: "+ person.parent[0].name );
             }
         }
 
@@ -420,6 +420,7 @@ namespace discrete_graph_c_
         public static void PrintFamilyTreeCentered(Person member, int depth = 0, int position = 40, int parentWidth = 80)
         {
             // Get parent's and partner's details
+
             string birthDate = member.bDay.Year > 1 ? member.bDay.ToString("dd-MM-yyyy") : "N/A";
             string partnerInfo = member.partner != null
                 ? $" - {member.partner.name} ({(member.partner.bDay.Year > 1 ? member.partner.bDay.ToString("dd-MM-yyyy") : "N/A")})"

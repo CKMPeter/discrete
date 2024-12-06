@@ -16,7 +16,8 @@ namespace discrete_graph_c_
         public static int selectUI() 
         {
             int mode;
-            string tmp;
+            string input;
+            string tmp = "";
             do
             {
                 Console.Clear();
@@ -33,14 +34,19 @@ namespace discrete_graph_c_
                          "\n9. Print Tree (Dictionaty)" +
                          "\n10. Print Tree (Verically) "+
                          "\n\nSelect: ");
-                tmp = Console.ReadLine();
-                if (tmp.Length < 2 && tmp != "")
+                input = Console.ReadLine();
+                if (input.Length <= 2 && input != "")
                 {
-                    if (Convert.ToChar(tmp) > 47 && Convert.ToChar(tmp) < 57)
-                    { 
-                        mode = Convert.ToInt32(tmp);
-                        continue;
+                    for (int i = 0; i < input.Length; i++)
+                    {
+                        if (Convert.ToChar(input[i]) > 47 && Convert.ToChar(input[i]) < 57)
+                        {
+                            tmp += input[i];
+                        }
                     }
+                    mode = Convert.ToInt32(input);
+                    Console.WriteLine(mode);
+                    continue;
                 }
                 Console.WriteLine("Please Select Again!" +
                     "\nPress any key to try again!");
