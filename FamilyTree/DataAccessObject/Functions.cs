@@ -15,7 +15,32 @@ namespace FamilyTree
             Regex regex = new Regex(pattern);
             return regex.IsMatch(bDay);
         }
+        public static List<Person> WriteFamilyToFile(string filePath, List<Person> family)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    foreach (Person person in family)
+                    {
+                        string partnerInfor = !string.IsNullOrEmpty(person.Partner?.Name)
+                            ? $"Partner: {person.Partner.Name}" : "";
+                        string line = $"Name: {person.Name}\n" +
+                                      $"DOB: {person.Birthday.ToShortDateString()}\n" +
+                                      $"History: {person.Histoy}" + partnerInfor;
+                        writer.WriteLine(line);
+                        writer.WriteLine("===============================================");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any errors that occur during file reading
+                Console.WriteLine("Error Writing file: " + ex.Message);
+            }
 
+            return family;
+        }
         public static List<Person> LoadFamilyFromFile(string filePath)
         {
             List<Person> family = new List<Person>();
