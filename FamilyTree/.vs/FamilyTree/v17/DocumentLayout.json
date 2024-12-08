@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "D:\\oop code\\FamilyTree\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|d:\\oop code\\familytree\\form\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,48 +19,32 @@
       "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|d:\\oop code\\familytree\\form\\visualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\visualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|d:\\oop code\\familytree\\form\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|d:\\oop code\\familytree\\form\\test.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\test.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|d:\\oop code\\familytree\\form\\visualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\visualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|d:\\oop code\\familytree\\form\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|d:\\oop code\\familytree\\object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:object\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\object\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:object\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\personinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\personinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\test.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\test.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\visualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\visualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\visualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\visualization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|D:\\oop code\\FamilyTree\\form\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +62,121 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Test.Designer.cs",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Test.Designer.cs",
+              "RelativeDocumentMoniker": "form\\Test.Designer.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Test.Designer.cs",
+              "RelativeToolTip": "form\\Test.Designer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T04:48:47.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Main.cs",
+              "RelativeDocumentMoniker": "form\\Main.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Main.cs",
+              "RelativeToolTip": "form\\Main.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAcwK4AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T13:12:19.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Main.cs",
+              "RelativeDocumentMoniker": "form\\Main.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Main.cs [Design]",
+              "RelativeToolTip": "form\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T13:13:13.855Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T15:14:57.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonInfo.Designer.cs",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\PersonInfo.Designer.cs",
+              "RelativeDocumentMoniker": "form\\PersonInfo.Designer.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\form\\PersonInfo.Designer.cs",
+              "RelativeToolTip": "form\\PersonInfo.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T15:06:29.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonInfo.cs",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\PersonInfo.cs",
+              "RelativeDocumentMoniker": "form\\PersonInfo.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\form\\PersonInfo.cs",
+              "RelativeToolTip": "form\\PersonInfo.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAiwCEAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T15:06:20.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PersonInfo.cs [Design]",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\PersonInfo.cs",
+              "RelativeDocumentMoniker": "form\\PersonInfo.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\form\\PersonInfo.cs [Design]",
+              "RelativeToolTip": "form\\PersonInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T15:03:10.886Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Functions.cs",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\object\\Functions.cs",
+              "RelativeDocumentMoniker": "object\\Functions.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\object\\Functions.cs",
+              "RelativeToolTip": "object\\Functions.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAIwLgAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:47:51.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Visualization.cs [Design]",
+              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Visualization.cs",
+              "RelativeDocumentMoniker": "form\\Visualization.cs",
+              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Visualization.cs [Design]",
+              "RelativeToolTip": "form\\Visualization.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T05:04:53.664Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Visualization.cs",
               "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Visualization.cs",
               "RelativeDocumentMoniker": "form\\Visualization.cs",
@@ -83,157 +189,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Visualization.cs [Design]",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Visualization.cs",
-              "RelativeDocumentMoniker": "form\\Visualization.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Visualization.cs [Design]",
-              "RelativeToolTip": "form\\Visualization.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:04:53.664Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Test.cs",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Test.cs",
-              "RelativeDocumentMoniker": "form\\Test.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Test.cs",
-              "RelativeToolTip": "form\\Test.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAwEAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:48:13.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Test.Designer.cs",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Test.Designer.cs",
-              "RelativeDocumentMoniker": "form\\Test.Designer.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Test.Designer.cs",
-              "RelativeToolTip": "form\\Test.Designer.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAQwC4AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:48:47.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Test.cs [Design]",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Test.cs",
-              "RelativeDocumentMoniker": "form\\Test.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Test.cs [Design]",
-              "RelativeToolTip": "form\\Test.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:49:07.522Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Main.cs",
-              "RelativeDocumentMoniker": "form\\Main.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Main.cs",
-              "RelativeToolTip": "form\\Main.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAwDYAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T13:12:19.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Main.cs",
-              "RelativeDocumentMoniker": "form\\Main.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\Main.cs [Design]",
-              "RelativeToolTip": "form\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T13:13:13.855Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAADgvxYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T15:14:57.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PersonInfo.Designer.cs",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\PersonInfo.Designer.cs",
-              "RelativeDocumentMoniker": "form\\PersonInfo.Designer.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\PersonInfo.Designer.cs",
-              "RelativeToolTip": "form\\PersonInfo.Designer.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwDsAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T15:06:29.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonInfo.cs",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\PersonInfo.cs",
-              "RelativeDocumentMoniker": "form\\PersonInfo.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\PersonInfo.cs",
-              "RelativeToolTip": "form\\PersonInfo.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T15:06:20.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PersonInfo.cs [Design]",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\PersonInfo.cs",
-              "RelativeDocumentMoniker": "form\\PersonInfo.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\form\\PersonInfo.cs [Design]",
-              "RelativeToolTip": "form\\PersonInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T15:03:10.886Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Functions.cs",
-              "DocumentMoniker": "D:\\oop code\\FamilyTree\\object\\Functions.cs",
-              "RelativeDocumentMoniker": "object\\Functions.cs",
-              "ToolTip": "D:\\oop code\\FamilyTree\\object\\Functions.cs",
-              "RelativeToolTip": "object\\Functions.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAEUAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T14:47:51.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Person.cs",
               "DocumentMoniker": "D:\\oop code\\FamilyTree\\object\\Person.cs",
               "RelativeDocumentMoniker": "object\\Person.cs",
               "ToolTip": "D:\\oop code\\FamilyTree\\object\\Person.cs",
               "RelativeToolTip": "object\\Person.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA9wB0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T14:34:54.271Z"
+              "WhenOpened": "2024-12-07T14:34:54.271Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Main.Designer.cs",
               "DocumentMoniker": "D:\\oop code\\FamilyTree\\form\\Main.Designer.cs",
               "RelativeDocumentMoniker": "form\\Main.Designer.cs",

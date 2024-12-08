@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace FamilyTree
 {
@@ -112,8 +113,83 @@ namespace FamilyTree
                 // Handle any errors that occur during file reading
                 Console.WriteLine("Error reading file: " + ex.Message);
             }
-
             return family;
+        }
+
+        public static string GetRelationship(Person personA, Person personB)
+        {
+            if (personA == null || personB == null)
+                return "Invalid input. One or both persons are null.";
+
+            // Kiểm tra quan hệ đối tác
+            if (personA.Partner == personB)
+                return $"{personA.Name} is the partner of {personB.Name}.";
+
+            // Kiểm tra cha mẹ
+            if (personA.Children.Contains(personB))
+                return $"{personA.Name} is the parent of {personB.Name}.";
+            if (personB.Children.Contains(personA))
+                return $"{personA.Name} is the child of {personB.Name}.";
+
+            // Kiểm tra ông bà
+            foreach (var child in personA.Children)
+            {
+                if (child.Children.Contains(personB))
+                    return $"{personA.Name} is the grandparent of {personB.Name}.";
+            }
+            foreach (var child in personB.Children)
+            {
+                if (child.Children.Contains(personA))
+                    return $"{personA.Name} is the grandchild of {personB.Name}.";
+            }
+
+            // Kiểm tra cụ cố
+            foreach (var child in personA.Children)
+            {
+                foreach (var grandchild in child.Children)
+                {
+                    if (grandchild.Children.Contains(personB))
+                        return $"{personA.Name} is the great-grandparent of {personB.Name}.";
+                }
+            }
+            foreach (var child in personB.Children)
+            {
+                foreach (var grandchild in child.Children)
+                {
+                    if (grandchild.Children.Contains(personA))
+                        return $"{personA.Name} is the great-grandchild of {personB.Name}.";
+                }
+            }
+
+            // Kiểm tra anh/chị/em ruột
+            if (personA.Partner != null && personB.Partner != null)
+            {
+                foreach (var sibling in personA.Children)
+                {
+                    if (sibling == personB)
+                        return $"{personA.Name} and {personB.Name} are siblings.";
+                }
+            }
+
+            return $"{personA.Name} and {personB.Name} have no direct relationship.";
+        }
+
+        public static Person FindPerson(string name, string dob, List<Person> familyMembers)
+        {
+            // Chuyển ngày sinh từ chuỗi thành DateTime
+            DateTime birthDay = DateTime.Parse(dob, new CultureInfo("en-GB"));
+
+            // Duyệt qua danh sách các thành viên để tìm kiếm
+            foreach (var person in familyMembers)
+            {
+                if (person.Name.Equals(name, StringComparison.OrdinalIgnoreCase) && person.Birthday == birthDay)
+                {
+                    return person; // Trả về đối tượng Person nếu tìm thấy
+                }
+            }
+
+            // Trả về null nếu không tìm thấy
+            return null;
         }
 
     }

@@ -9,3 +9,4 @@ D:\oop code\FamilyTree\obj\Debug\FamilyTree.exe
 D:\oop code\FamilyTree\obj\Debug\FamilyTree.pdb
 D:\oop code\FamilyTree\obj\Debug\FamilyTreeApp.Main.resources
 D:\oop code\FamilyTree\obj\Debug\FamilyTree.form.PersonInfo.resources
+D:\oop code\FamilyTree\obj\Debug\FamilyTreeApp.Test.resources

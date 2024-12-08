@@ -44,6 +44,7 @@ namespace FamilyTreeApp
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbFilePath = new System.Windows.Forms.Label();
+            this.btnRelationship = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -245,9 +246,21 @@ namespace FamilyTreeApp
             this.lbFilePath.Size = new System.Drawing.Size(0, 38);
             this.lbFilePath.TabIndex = 11;
             // 
+            // btnRelationship
+            // 
+            this.btnRelationship.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelationship.Location = new System.Drawing.Point(172, 501);
+            this.btnRelationship.Name = "btnRelationship";
+            this.btnRelationship.Size = new System.Drawing.Size(154, 60);
+            this.btnRelationship.TabIndex = 12;
+            this.btnRelationship.Text = "Relationship";
+            this.btnRelationship.UseVisualStyleBackColor = true;
+            this.btnRelationship.Click += new System.EventHandler(this.btnRelationship_Click);
+            // 
             // Main
             // 
             this.ClientSize = new System.Drawing.Size(952, 573);
+            this.Controls.Add(this.btnRelationship);
             this.Controls.Add(this.lbFilePath);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
@@ -290,6 +303,7 @@ namespace FamilyTreeApp
         private System.Windows.Forms.TextBox tbDob;
         private System.Windows.Forms.TextBox tbHistory;
         private System.Windows.Forms.Label lbFilePath;
+        private System.Windows.Forms.Button btnRelationship;
     }
 }
 

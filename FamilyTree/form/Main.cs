@@ -182,5 +182,11 @@ namespace FamilyTreeApp
             Visualization newForm = new Visualization(rootPerson);
             newForm.Show();
         }
+
+        private void btnRelationship_Click(object sender, EventArgs e)
+        {
+            PersonInfo relationshipCheckin = new PersonInfo(currentPerson, "relationCheckin");
+            relationshipCheckin.Show();
+        }
     }
 }

@@ -37,6 +37,7 @@
             this.tbHistory = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.lbRelationChecking = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -133,6 +134,16 @@
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // lbRelationChecking
+            // 
+            this.lbRelationChecking.AutoSize = true;
+            this.lbRelationChecking.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRelationChecking.Location = new System.Drawing.Point(56, 307);
+            this.lbRelationChecking.Name = "lbRelationChecking";
+            this.lbRelationChecking.Size = new System.Drawing.Size(0, 32);
+            this.lbRelationChecking.TabIndex = 9;
             // 
             // PersonInfo
             // 
@@ -140,6 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.lbRelationChecking);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.tbHistory);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.TextBox tbHistory;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label lbRelationChecking;
     }
 }

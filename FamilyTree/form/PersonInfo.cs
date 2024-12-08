@@ -37,8 +37,20 @@ namespace FamilyTree.form
                     tmp_ = new Person(tbName.Text, birthDay);
                 }
             }
-            if (mode == "addChild") tmp.addChild(tmp_);
-            else if (mode == "addPartner") tmp.addPartner(tmp_); 
+            if (mode == "addChild") { tmp.addChild(tmp_); this.Close(); }
+            else if (mode == "addPartner") { tmp.addPartner(tmp_); this.Close(); }
+            else if (mode == "relationCheckin")
+            {
+                btnCreate.Text = "Check";
+                Person select = Functions.FindPerson(tbName.Text.Trim(), tbDob.Text.Trim(), main.FamilyMember);
+                Console.WriteLine(tmp.Name, select.Name);
+                lbRelationChecking.Text = Functions.GetRelationship(tmp, select);
+            }
+            
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
