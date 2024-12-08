@@ -9,3 +9,14 @@ D:\oop code\FamilyTree\obj\Debug\FamilyTree.exe
 D:\oop code\FamilyTree\obj\Debug\FamilyTree.pdb
 D:\oop code\FamilyTree\obj\Debug\FamilyTreeApp.Main.resources
 D:\oop code\FamilyTree\obj\Debug\FamilyTree.form.PersonInfo.resources
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\bin\Debug\FamilyTree.exe.config
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\bin\Debug\FamilyTree.exe
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\bin\Debug\FamilyTree.pdb
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\obj\Debug\FamilyTreeApp.csproj.AssemblyReference.cache
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\obj\Debug\FamilyTreeApp.Main.resources
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\obj\Debug\FamilyTree.form.PersonInfo.resources
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\obj\Debug\FamilyTree.Properties.Resources.resources
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\obj\Debug\FamilyTreeApp.csproj.GenerateResource.cache
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\obj\Debug\FamilyTreeApp.csproj.CoreCompileInputs.cache
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\obj\Debug\FamilyTree.exe
+G:\DATA BAO 2023 - 2024\DIGR 2023 - 2024\discrete\FamilyTree\obj\Debug\FamilyTree.pdb

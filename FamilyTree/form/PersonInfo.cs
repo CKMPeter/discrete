@@ -41,6 +41,11 @@ namespace FamilyTree.form
             }
             if (mode == "addChild") tmp.addChild(tmp_);
             else if (mode == "addPartner") tmp.addPartner(tmp_);
+            this.Close();
+        }
+
+        private void btnChoosefile_Click(object sender, EventArgs e)
+        {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
             openFileDialog1.InitialDirectory = "D:\\Sample"; // Initial directory
@@ -57,12 +62,14 @@ namespace FamilyTree.form
             // Get the selected file's full path
             string selectedFileName = openFileDialog1.FileName;
 
+            // Print the selected file path (you can return it or use it as needed)
+            tbFile.Text = selectedFileName;
+
             FamilyMember = Functions.WriteFamilyToFile(selectedFileName, FamilyMember);
             if (FamilyMember.Count != 0)
                 rootPerson = FamilyMember[0];
             // Optionally, you can use the file path further in your code
             // For example, load the file content or display the file path in a UI element.
-            this.Close();
         }
     }
 }

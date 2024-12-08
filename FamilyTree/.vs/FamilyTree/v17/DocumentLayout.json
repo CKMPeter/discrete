@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\familytree\\form\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\familytree\\dataaccessobject\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\familytree\\form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:form\\personinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\dataaccessobject\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:dataaccessobject\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|g:\\data bao 2023 - 2024\\digr 2023 - 2024\\discrete\\familytree\\dataaccessobject\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\dataaccessobject\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA590C66-0B6C-4958-B645-ED17D8E9DC4C}|FamilyTreeApp.csproj|solutionrelative:dataaccessobject\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -78,8 +78,7 @@
               "RelativeToolTip": "DataAccessObject\\Person.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T06:39:07.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T06:39:07.388Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "DataAccessObject\\Functions.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAgwB0AAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T06:38:42.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T06:38:42.252Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "form\\Visualization.cs",
               "ViewState": "AQIAAIIAAAAAAAAAAAAQwFwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:04:56.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T05:04:56.924Z"
             },
             {
               "$type": "Document",
@@ -116,8 +113,7 @@
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\Visualization.cs [Design]",
               "RelativeToolTip": "form\\Visualization.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:04:53.664Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-08T05:04:53.664Z"
             },
             {
               "$type": "Document",
@@ -129,8 +125,7 @@
               "RelativeToolTip": "form\\Test.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:48:13.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T04:48:13.386Z"
             },
             {
               "$type": "Document",
@@ -142,8 +137,7 @@
               "RelativeToolTip": "form\\Test.Designer.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAAQwC4AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:48:47.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T04:48:47.188Z"
             },
             {
               "$type": "Document",
@@ -154,18 +148,17 @@
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\Test.cs [Design]",
               "RelativeToolTip": "form\\Test.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:49:07.522Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-08T04:49:07.522Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Main.cs",
               "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\Main.cs",
               "RelativeDocumentMoniker": "form\\Main.cs",
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\Main.cs",
               "RelativeToolTip": "form\\Main.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAwwGsAAAAAAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAvwE4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T13:12:19.509Z",
               "EditorCaption": ""
@@ -192,8 +185,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAADgvxYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T15:14:57.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T15:14:57.304Z"
             },
             {
               "$type": "Document",
@@ -205,18 +197,17 @@
               "RelativeToolTip": "form\\PersonInfo.Designer.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAQwDsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T15:06:29.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T15:06:29.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PersonInfo.cs",
               "DocumentMoniker": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\PersonInfo.cs",
               "RelativeDocumentMoniker": "form\\PersonInfo.cs",
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\PersonInfo.cs",
               "RelativeToolTip": "form\\PersonInfo.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAADwvzsAAABXAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAADwvzsAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T15:06:20.342Z",
               "EditorCaption": ""
@@ -230,8 +221,7 @@
               "ToolTip": "G:\\DATA BAO 2023 - 2024\\DIGR 2023 - 2024\\discrete\\FamilyTree\\form\\PersonInfo.cs [Design]",
               "RelativeToolTip": "form\\PersonInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T15:03:10.886Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-07T15:03:10.886Z"
             },
             {
               "$type": "Document",
