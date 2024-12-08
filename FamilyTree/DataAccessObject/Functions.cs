@@ -45,8 +45,6 @@ namespace FamilyTree
         {
             List<Person> family = new List<Person>();
             Person currentPerson = null;
-            string name = "", history = "", parentInfo = "", partnerName = "";
-            DateTime birthday = DateTime.MinValue;
 
             try
             {
@@ -55,7 +53,7 @@ namespace FamilyTree
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        if (line.Contains("Name:"))
+                        if (line.StartsWith("Name:"))
                         {
                             // Add the current person to the family list if they exist
                             if (currentPerson != null)
@@ -63,37 +61,59 @@ namespace FamilyTree
                                 family.Add(currentPerson);
                             }
 
-                            // Extract the name (everything after "Name:" and before the next field)
-                            name = line.Substring(line.IndexOf(":") + 1).Trim();
-                            currentPerson = new Person(name, birthday); // Create a new person with the name
+                            // Extract the name
+                            string name = line.Substring(line.IndexOf(":") + 1).Trim();
+                            currentPerson = new Person(name, DateTime.MinValue); // Create a new person with the name
                         }
-                        else if (line.Contains("DOB:"))
+                        else if (line.StartsWith("DOB:"))
                         {
-                            // Extract the date of birth (everything after "DOB:")
                             var dobPart = line.Substring(line.IndexOf(":") + 1).Trim();
-                            if (DateTime.TryParse(dobPart, out DateTime parsedDate))
+                            if (DateTime.TryParseExact(dobPart, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime parsedDate))
                             {
-                                birthday = parsedDate;
                                 if (currentPerson != null)
-                                    currentPerson.Birthday = birthday;
+                                {
+                                    currentPerson.Birthday = parsedDate;
+                                }
                             }
                         }
-                        else if (line.Contains("Partner:"))
+                        else if (line.StartsWith("Partner:"))
                         {
                             // Extract the partner's name
-                            partnerName = line.Substring(line.IndexOf(":") + 1).Trim();
+                            string partnerName = line.Substring(line.IndexOf(":") + 1).Trim();
+                            if (currentPerson != null)
+                            {
+                                var partner = family.FirstOrDefault(p => p.Name == partnerName);
+                                if (partner != null)
+                                {
+                                    currentPerson.addPartner(partner);
+                                }
+                            }
                         }
-                        else if (line.Contains("Parent:"))
+                        else if (line.StartsWith("Parent:"))
                         {
-                            // Extract the parent(s) info (names after "Parent:")
-                            parentInfo = line.Substring(line.IndexOf(":") + 1).Trim();
+                            // Extract the parent(s) info
+                            string parentInfo = line.Substring(line.IndexOf(":") + 1).Trim();
+                            if (currentPerson != null)
+                            {
+                                var parents = parentInfo.Split(new[] { '&' }, StringSplitOptions.RemoveEmptyEntries);
+                                foreach (var parentName in parents)
+                                {
+                                    var parent = family.FirstOrDefault(p => p.Name == parentName.Trim());
+                                    if (parent != null)
+                                    {
+                                        parent.addChild(currentPerson);
+                                    }
+                                }
+                            }
                         }
-                        else if (line.Contains("History:"))
+                        else if (line.StartsWith("History:"))
                         {
                             // Extract history information
-                            history = line.Substring(line.IndexOf(":") + 1).Trim();
+                            string history = line.Substring(line.IndexOf(":") + 1).Trim();
                             if (currentPerson != null)
+                            {
                                 currentPerson.Histoy = history;
+                            }
                         }
                     }
 
@@ -101,34 +121,6 @@ namespace FamilyTree
                     if (currentPerson != null)
                     {
                         family.Add(currentPerson);
-                    }
-
-                    // Now associate partners and children
-                    foreach (var person in family)
-                    {
-                        // Find and set the partner
-                        if (!string.IsNullOrEmpty(partnerName))
-                        {
-                            var partner = family.FirstOrDefault(p => p.Name == partnerName);
-                            if (partner != null)
-                            {
-                                person.addPartner(partner);
-                            }
-                        }
-
-                        // Find and set parents (if any)
-                        if (!string.IsNullOrEmpty(parentInfo))
-                        {
-                            var parents = parentInfo.Split(new[] { '&' }, StringSplitOptions.RemoveEmptyEntries);
-                            foreach (var parent in parents)
-                            {
-                                var parentPerson = family.FirstOrDefault(p => p.Name == parent.Trim());
-                                if (parentPerson != null)
-                                {
-                                    parentPerson.addChild(person);
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -140,6 +132,5 @@ namespace FamilyTree
 
             return family;
         }
-
     }
 }
