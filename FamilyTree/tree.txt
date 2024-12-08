@@ -1,0 +1,29 @@
+Name: Robert Doe
+DOB: 10/02/1960
+Partner: Mary Doe
+Parent: William Doe & Elizabeth Doe
+History: Robert is a retired teacher who enjoys gardening.
+
+Name: Mary Doe
+DOB: 25/03/1962
+Partner: Robert Doe
+Parent: Charles Brown & Anna Brown
+History: Mary is a nurse who loves reading.
+
+Name: Michael Smith
+DOB: 30/11/1965
+Partner: Sarah Smith
+Parent: Thomas Smith & Linda Smith
+History: Michael is a businessman who enjoys traveling.
+
+Name: John Doe
+DOB: 15/05/1985
+Partner: Jane Smith
+Parent: Robert Doe & Mary Doe
+History: John is a software engineer who loves hiking.
+
+Name: Jane Smith
+DOB: 20/08/1987
+Partner: John Doe
+Parent: Michael Smith & Sarah Smith
+History: Jane is a graphic designer and enjoys painting.
