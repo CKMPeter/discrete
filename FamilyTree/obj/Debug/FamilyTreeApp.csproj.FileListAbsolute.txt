@@ -1,0 +1,11 @@
+D:\oop code\FamilyTree\bin\Debug\FamilyTree.exe.config
+D:\oop code\FamilyTree\bin\Debug\FamilyTree.exe
+D:\oop code\FamilyTree\bin\Debug\FamilyTree.pdb
+D:\oop code\FamilyTree\obj\Debug\FamilyTreeApp.csproj.AssemblyReference.cache
+D:\oop code\FamilyTree\obj\Debug\FamilyTree.Properties.Resources.resources
+D:\oop code\FamilyTree\obj\Debug\FamilyTreeApp.csproj.GenerateResource.cache
+D:\oop code\FamilyTree\obj\Debug\FamilyTreeApp.csproj.CoreCompileInputs.cache
+D:\oop code\FamilyTree\obj\Debug\FamilyTree.exe
+D:\oop code\FamilyTree\obj\Debug\FamilyTree.pdb
+D:\oop code\FamilyTree\obj\Debug\FamilyTreeApp.Main.resources
+D:\oop code\FamilyTree\obj\Debug\FamilyTree.form.PersonInfo.resources
