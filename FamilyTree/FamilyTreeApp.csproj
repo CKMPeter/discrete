@@ -70,8 +70,8 @@
     <Compile Include="form\Visualization.Designer.cs">
       <DependentUpon>Visualization.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataAccessObject\Functions.cs" />
-    <Compile Include="DataAccessObject\Person.cs" />
+    <Compile Include="object\Functions.cs" />
+    <Compile Include="object\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="form\Main.resx">
